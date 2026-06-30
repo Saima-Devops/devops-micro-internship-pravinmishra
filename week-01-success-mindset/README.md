@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I tend to be highly work-driven and deeply committed to my tasks, even when others feel it may be excessive. I also value being direct and straightforward in my communication, though this approach is sometimes seen as too blunt by those around me.
 
 ---
 
@@ -55,11 +55,13 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Being overly work-focused can affect balance in life.
 
 ### Evidence from my life
 
-Add your answer here...
+I noticed that I often spend a lot of time and energy on work-related tasks.
+Even when I feel productive, others around me sometimes say I am doing too much.
+This showed me that too much focus on work can reduce time for rest and balance.
 
 ---
 
@@ -67,11 +69,15 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Being straightforward is not always received the same way by everyone. People don’t always perceive intentions the way they are meant.
 
 ### Evidence from my life
 
-Add your answer here...
+At times, I communicate or act with good intentions, especially when being direct or focused on work.
+However, others sometimes interpret it differently than I expected.
+This helped me realize that intention and perception are not always the same. 
+This taught me that communication style affects how my message is received.
+
 
 ---
 
@@ -79,11 +85,14 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Discipline matters more than motivation for long-term success.
+
 
 ### Evidence from my life
 
-Add your answer here...
+I noticed that I am more productive when I follow a routine, even on days when I don’t feel motivated.
+When I rely only on motivation, my consistency drops.
+This showed me that discipline is what keeps progress going, not just motivation.
 
 ---
 
@@ -135,11 +144,11 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+(https://www.linkedin.com/pulse/saimas-version-20-rise-ai-driven-devops-engineer-saima-usman-i9gef)
 
 ### Public Link
 
-Paste your link here:
+(https://www.linkedin.com/pulse/saimas-version-20-rise-ai-driven-devops-engineer-saima-usman-i9gef)
 
 `__________________________`
 
@@ -173,7 +182,12 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+**Yes**
+
+**What emotion did you feel?**
+
+I mostly felt stress and guilt. Even though cutting corners seemed like the easier option at the time, I kept thinking about whether it was the right thing to do. I was worried that someone might notice or that the outcome wouldn't meet the expected standard. Looking back, I also felt some regret because the short-term convenience wasn't worth the discomfort that followed. The experience reminded me that being honest and doing things properly gives me much more peace of mind, even if it takes extra time and effort.
+
 
 ---
 
@@ -199,16 +213,20 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+
+
+| Book | Cover | Quick Summary | Why I Chose It |
+|------|:-----:|:-------------:|----------------|
+| **Atomic Habits**<br>*by James Clear* | <img src="screenshots/atomic-habits.png" alt="Atomic Habits" width="250"> | <img src="screenshots/AtomicHabits-R.png" alt="Atomic Habits" width="120"> | To learn how small, consistent habits can lead to significant personal and professional growth. |
+| **Deep Work**<br>*by Cal Newport* | <img src="screenshots/deep-work.png" alt="Deep Work" width="150"> | <img src="screenshots/Deep-Work-R.png" alt="Deep Work" width="200"> | To improve my ability to focus deeply, minimize distractions, and produce high-quality work. |
+| **The Psychology of Money**<br>*by Morgan Housel* | <img src="screenshots/the-psychology-of-money.png" alt="The Psychology of Money" width="120"> | <img src="screenshots/The Psychology-of-Money-R.png" alt="The Psychology of Money" width="200"> | To better understand financial behavior, long-term investing, and making smarter money decisions. |
+| **Thinking, Fast and Slow**<br>*by Daniel Kahneman* | <img src="screenshots/thinking-fast-and-slow.png" alt="Thinking, Fast and Slow" width="150"> | <img src="screenshots/Thinking-Fast-Slow-R.png" alt="Thinking, Fast and Slow" width="200"> | To learn how people make decisions, recognize cognitive biases, and develop better judgment. |
+| **The 7 Habits of Highly Effective People**<br>*by Stephen R. Covey* | <img src="screenshots/the-7-habits.png" alt="The 7 Habits of Highly Effective People" width="150"> | <img src="screenshots/Effective-People-R.png" alt="The 7 Habits of Highly Effective People" width="200"> | To build strong personal values, improve effectiveness, and become more proactive in life and work. |
+| **How to Win Friends and Influence People**<br>*by Dale Carnegie* | <img src="screenshots/how-to-win-friends.png" alt="How to Win Friends and Influence People" width="150"> | <img src="screenshots/Win-Friends-Influence-People-R.png" alt="How to Win Friends and Influence People" width="200"> | To strengthen my communication skills, build meaningful relationships, and become better at working with others. |
+| **The First 90 Days**<br>*by Michael D. Watkins* | <img src="screenshots/the-first-90-days.png" alt="The First 90 Days" width="150"> | <img src="screenshots/The-First-90-Days-R.png" alt="The First 90 Days" width="200"> | To learn how to adapt quickly, succeed in new roles, and make a positive impact during career transitions. |
+| **The Effective Executive**<br>*by Peter F. Drucker* | <img src="screenshots/the-effective-executive.png" alt="The Effective Executive" width="150"> | <img src="screenshots/Effective-Executive-R.png" alt="The Effective Executive" width="200"> | To improve my time management, decision-making, and leadership skills to become a more effective professional. |
+| **Never Split the Difference**<br>*by Chris Voss* | <img src="screenshots/never-split-the-difference.png" alt="Never Split the Difference" width="150"> | <img src="screenshots/Never-Split-Difference-R.png" alt="Never Split the Difference" width="200"> | To learn practical negotiation and communication techniques for handling difficult conversations and achieving better outcomes. |
+| **Can't Hurt Me**<br>*by David Goggins* | <img src="screenshots/cant-hurt-me.png" alt="Can't Hurt Me" width="150"> | <img src="screenshots/Can&apos;t-Hurt-Me-R.png" alt="Can't Hurt Me" width="400"> | To develop mental resilience, self-discipline, and the determination to overcome challenges and push beyond my limits. |
 
 ---
 
@@ -237,16 +255,16 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+- Learning hours per week
+- New skills or certifications earned
+- Projects completed
+- Portfolio updates
+- Deep work sessions per week
+- Sleep hours
+- Exercise/workout consistency
+- Daily energy level
+- Monthly savings and investments
+- Personal spending tracker
 
 ---
 
@@ -268,11 +286,27 @@ Examples:
 
 ### Did You Do It?
 
-**Yes / No**
+**Yes**
 
 Answer:
 
-Add your answer here...
+## Step 1: Brain Dump (Private)
+
+I wrote down everything that was on my mind without organizing it first. This included:
+
+* Pending tasks and assignments I need to complete
+* Upcoming deadlines and exams
+* Personal goals I want to achieve in the next few months
+* Financial responsibilities and any pending payments
+* Messages and conversations I still need to respond to
+* Ideas for learning, projects, and skill development
+* Health-related habits I want to improve (sleep, exercise, routine)
+* Career-related goals and things I want to improve professionally
+* Small daily responsibilities and reminders
+* Things I’ve been worrying about or overthinking
+
+This helped me clear mental clutter and see everything in one place instead of keeping it in my head.
+
 
 ---
 
@@ -288,9 +322,17 @@ Example:
 * Sat: DMI session
 * Sun: Weekly review
 
-#### My Weekly Routine
+My Answer:
 
-Add your answer here...
+### My Weekly Routine
+
+* Mon–Fri: 60–90 min deep work (study, skill-building, or project work)
+* Mon–Fri: 30 min learning (reading or online course)
+* Mon–Fri: 20–30 min workout or physical activity
+* Saturday: Attend DMI session + review of weekly progress + planning next week
+* Sunday: Rest + hangingout with family + reset + light preparation for the upcoming week
+* Daily: 10–15 min planning and journaling to track tasks and focus
+
 
 ---
 
@@ -298,11 +340,12 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+* Mondays & Tuesdays (9:00am till 11:00am)
+* Wednesdays (9:00am till 11:00am), if needed
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+4 sessions per week to upgrade my learning skills + practice of new tools 
 
 ---
 
@@ -316,7 +359,17 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+* Phone is kept on silent and out of reach during deep work sessions
+* No social media (Instagram/YouTube/TikTok) during study or work time
+* Social media is allowed only after completing daily tasks
+* Notifications are turned off for non-essential apps
+* Study environment is kept clean and minimal (only laptop, notebook, and required materials)
+* I will use focus timers (like Pomodoro) during work sessions
+* No multitasking while studying or learning
+* I will avoid random browsing and stick only to planned tasks
+* I will study in a quiet space or use noise-cancelling headphones
+* Entertainment is used only as a reward after completing goals
+
 
 ---
 
@@ -324,19 +377,19 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I realized that I tend to delay important tasks and only start working when deadlines feel close. I also noticed that I work better when I have a clear structure and specific time blocks instead of an open schedule.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+My biggest loop is distraction, especially phone usage and switching between tasks. I also tend to lose focus when I don’t have a fixed plan for the day, which leads to stalling.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will follow a fixed daily deep work routine: 60–90 minutes of focused study/work every weekday from a set time (for example, 7:00 PM to 8:30 PM), with phone kept away and notifications off during this period.
 
 ### LinkedIn Post
 
-Paste your LinkedIn post link here:
+https://lnkd.in/dHvbC5Z9
 
 `__________________________`
 
@@ -344,8 +397,8 @@ Paste your LinkedIn post link here:
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: (https://www.linkedin.com/in/saima-usman/recent-activity/articles/)
+- Blog / Medium : (https://tinyurl.com/mryuhkhf), (https://tinyurl.com/4tnnp3bv)
 
 ---
 
@@ -369,3 +422,9 @@ It helps learners build strong DevOps foundations with hands-on experience.
 ---
 
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track*
+
+----
+
+## My Badges
+
+![alt text](/badges/week-00.svg)  ![alt text](/badges/week-01.svg)
