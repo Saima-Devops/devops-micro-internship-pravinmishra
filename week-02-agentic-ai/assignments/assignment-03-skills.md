@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** Skills
-**Estimated Time:** 90 minutes
-**Difficulty:** Intermediate
-**Category:** Agentic AI, Skills
+**Assignment:** Skills                
+**Estimated Time:** 90 minutes             
+**Difficulty:** Intermediate          
+**Category:** Agentic AI, Skills               
 
 ---
 
@@ -212,4 +212,4 @@ Before submission, verify:
 
 ## 13. Final Submission
 
-Submit only your Google Doc link.
+Submit your assignment using this google form.

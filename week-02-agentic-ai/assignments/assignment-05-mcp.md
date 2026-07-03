@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** MCP Servers
-**Estimated Time:** 60 minutes
-**Difficulty:** Intermediate
-**Category:** Agentic AI, MCP
+**Assignment:** MCP Servers          
+**Estimated Time:** 60 minutes            
+**Difficulty:** Intermediate             
+**Category:** Agentic AI, MCP              
 
 ---
 
@@ -229,4 +229,4 @@ Before submission, verify:
 
 ## 13. Final Submission
 
-Submit only your Google Doc link.
+Submit your assignment using this google form.

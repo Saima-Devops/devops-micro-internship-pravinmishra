@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** Hooks & Permissions
-**Estimated Time:** 60 minutes
-**Difficulty:** Intermediate
-**Category:** Agentic AI, Safety
+**Assignment:** Hooks & Permissions             
+**Estimated Time:** 60 minutes             
+**Difficulty:** Intermediate                 
+**Category:** Agentic AI, Safety              
 
 ---
 
@@ -249,4 +249,4 @@ Before submission, verify:
 
 ## 13. Final Submission
 
-Submit only your Google Doc link.
+Submit your assignment using this google form.

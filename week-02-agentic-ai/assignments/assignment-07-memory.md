@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** Memory
-**Estimated Time:** 45 minutes
-**Difficulty:** Intermediate
-**Category:** Agentic AI, Memory
+**Assignment:** Memory               
+**Estimated Time:** 45 minutes          
+**Difficulty:** Intermediate                
+**Category:** Agentic AI, Memory               
 
 ---
 
@@ -208,4 +208,4 @@ Before submission, verify:
 
 ## 13. Final Submission
 
-Submit only your Google Doc link.
+Submit your assignment using this google form.
