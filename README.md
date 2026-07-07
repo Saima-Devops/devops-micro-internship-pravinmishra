@@ -3,7 +3,7 @@
 ![Cohort](https://img.shields.io/badge/Cohort-3-blue?style=for-the-badge)
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
-![Weeks](https://img.shields.io/badge/Weeks_Completed-1%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-2%2F15-green?style=for-the-badge)
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
@@ -70,10 +70,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code
 
-<!-- Week 02 → Agentic AI with Claude Code -->
-<!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
 
 <!-- Week 03 → Linux for DevOps -->
 <!-- [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) -->
@@ -135,7 +133,7 @@ This is not a course. It is an internship-style program — real deployments, re
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://tinyurl.com/mtpakc8b | https://tinyurl.com/4ezruae7 |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://tinyurl.com/5n8457ma | https://tinyurl.com/4tnnp3bv |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
+| 02 | Agentic AI with Claude Code | ✅ Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
