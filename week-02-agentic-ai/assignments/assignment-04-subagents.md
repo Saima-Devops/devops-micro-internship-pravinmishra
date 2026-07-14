@@ -77,6 +77,8 @@ mkdir -p .claude/agents
 **Screenshots Required:**
 - Screenshot 1 — VS Code sidebar showing `.claude/agents/` with all 3 files
 
+![alt text](screenshots/assign-04-image-1.png)
+
 ---
 
 ### Task 2 — Compare the Agent Configurations
@@ -97,6 +99,10 @@ mkdir -p .claude/agents
 **Screenshots Required:**
 - Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 - Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
+
+![alt text](screenshots/assign-04-image-3.png)
+
+![alt text](screenshots/assign-04-image-2.png)
 
 ---
 
@@ -121,6 +127,13 @@ Audit my Terraform files for security issues.
 - Screenshot 4 — The delegation message showing Claude launched the security-auditor
 - Screenshot 5 — Security audit report output
 
+![alt text](screenshots/assign-04-image-6.png)
+
+![alt text](screenshots/assign-04-image-7.png)
+
+![alt text](screenshots/assign-04-image-8.png)
+
+
 ---
 
 ### Task 4 — Run the Cost Optimizer
@@ -141,6 +154,9 @@ Review my Terraform infrastructure for cost optimization.
 
 **Screenshots Required:**
 - Screenshot 6 — The full cost optimization report
+
+
+![alt text](screenshots/assign-04-image-4.png)
 
 ---
 
@@ -180,10 +196,10 @@ Not required for this assignment.
 ## 12. Completion Checklist
 
 Before submission, verify:
-- [ ] All 3 agent files in `.claude/agents/`
-- [ ] Screenshot 2 and 3 show different tools and models for each agent
-- [ ] 3 written answers 
-- [ ] Security auditor ran and produced a report with findings
-- [ ] Cost optimizer ran and produced a report
-- [ ] Agents committed and visible in GitHub repo
+- [✔️] All 3 agent files in `.claude/agents/`
+- [✔️] Screenshot 2 and 3 show different tools and models for each agent
+- [✔️] 3 written answers 
+- [✔️] Security auditor ran and produced a report with findings
+- [✔️] Cost optimizer ran and produced a report
+- [✔️] Agents committed and visible in GitHub repo
 

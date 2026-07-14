@@ -79,6 +79,10 @@ Each task must be completed sequentially.
 **Screenshots Required:**
 - Screenshot 1 — GitHub token creation page showing the selected scopes (`repo`, `read:user`) — token value must NOT be visible
 
+![alt text](screenshots/assign-04-image-9.png)
+
+![alt text](screenshots/assign-04-image-10.png)
+
 ---
 
 ### Task 2 — Create .mcp.json at the Project Root
@@ -108,6 +112,8 @@ Each task must be completed sequentially.
 **Screenshots Required:**
 - Screenshot 2 — `.mcp.json` open in VS Code showing the full configuration
 
+![alt text](screenshots/assign-04-image-11.png)
+
 ---
 
 ### Task 3 — Add Your Token to settings.local.json
@@ -135,6 +141,8 @@ Each task must be completed sequentially.
 **Screenshots Required:**
 - Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section — **blur or cover the actual GitHub token value**
 
+![alt text](screenshots/assign-04-image-12.png)
+
 ---
 
 ### Task 4 — Verify the Connection with /mcp
@@ -155,6 +163,9 @@ Each task must be completed sequentially.
 
 **Screenshots Required:**
 - Screenshot 4 — `/mcp` output showing `github: connected`
+
+![alt text](screenshots/assign-04-image-13.png)
+
 
 ---
 
@@ -185,6 +196,12 @@ Use GitHub MCP to get the README.md file from <your-github-username>/Ultimate-Ag
 **Screenshots Required:**
 
 * Screenshot 5 — Claude's response showing the GitHub MCP tool call and the retrieved README.md content.
+
+![alt text](screenshots/assign-04-image-14.png)
+
+![alt text](screenshots/assign-04-image-15.png)
+
+![alt text](screenshots/assign-04-image-16.png)
 
 ---
 
@@ -221,11 +238,11 @@ Not required for this assignment.
 ## 12. Completion Checklist
 
 Before submission, verify:
-- [ ] GitHub PAT created with correct scopes (`repo`, `read:user`)
-- [ ] `.mcp.json` at project root with GitHub server configured
-- [ ] `settings.local.json` has the token — token value blurred in screenshot
-- [ ] `settings.local.json` is gitignored and NOT committed
-- [ ] `/mcp` shows `github: connected`
-- [ ] Live GitHub query returned real repository data
-- [ ] `.mcp.json` committed and visible in GitHub repo
+- [✔️] GitHub PAT created with correct scopes (`repo`, `read:user`)
+- [✔️] `.mcp.json` at project root with GitHub server configured
+- [✔️] `settings.local.json` has the token — token value blurred in screenshot
+- [✔️] `settings.local.json` is gitignored and NOT committed
+- [✔️] `/mcp` shows `github: connected`
+- [✔️] Live GitHub query returned real repository data
+- [✔️] `.mcp.json` committed and visible in GitHub repo
 

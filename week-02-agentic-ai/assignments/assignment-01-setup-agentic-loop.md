@@ -82,6 +82,11 @@ claude
 - Screenshot 1 — Terminal showing `claude --version` with the version number visible
 - Screenshot 2 — Claude Code authenticated and showing the terminal prompt 
 
+
+![Claude Version](screenshots/image-05.png)
+
+![Claude Verified](screenshots/image-01.png)
+
 ---
 
 ### Task 2 — Fork and Clone the Starter Repository
@@ -105,6 +110,8 @@ code .
 
 **Screenshots Required:**
 - Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
+
+![Project Tree](screenshots/image-06.png)
 
 ---
 
@@ -132,6 +139,13 @@ How many lines of CSS does this project have?
 **Screenshots Required:**
 - Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
 - Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
+
+![1st Prompt](screenshots/image-02.png)
+
+![1st Prompt](screenshots/image-03.png)
+
+![2nd Prompt](screenshots/image-04.png)
+
 
 ---
 

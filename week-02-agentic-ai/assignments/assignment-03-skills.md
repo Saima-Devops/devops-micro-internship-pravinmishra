@@ -80,6 +80,10 @@ mkdir -p .claude/skills/deploy
 **Screenshots Required:**
 - Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
+![alt text](screenshots/assign-03-image-1.png)
+
+![alt text](screenshots/assign-03-image-2.png)
+
 ---
 
 ### Task 2 — Add the Skill Files
@@ -101,6 +105,13 @@ mkdir -p .claude/skills/deploy
 **Screenshots Required:**
 - Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 - Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
+
+![alt text](screenshots/assign-03-image-3.png)
+
+![alt text](screenshots/assign-03-image-4.png)
+
+![alt text](screenshots/assign-03-image-11.png)
+
 ---
 
 ### Task 3 — Run /scaffold-terraform
@@ -123,6 +134,14 @@ mkdir -p .claude/skills/deploy
 **Screenshots Required:**
 - Screenshot 4 — Claude's response showing the scaffold complete with the file list
 - Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
+
+![alt text](screenshots/assign-03-image-5.png)
+
+![alt text](screenshots/assign-03-image-6.png)
+
+![alt text](screenshots/assign-03-image-7.png)
+
+![alt text](screenshots/assign-03-image-8.png)
 
 ---
 
@@ -152,6 +171,11 @@ Then in Claude Code:
 
 **Screenshots Required:**
 - Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
+
+![alt text](screenshots/assign-03-image-9.png)
+
+![alt text](screenshots/assign-03-image-10.png)
+
 
 ---
 
@@ -194,11 +218,11 @@ Create a LinkedIn post including:
 ## 12. Completion Checklist
 
 Before submission, verify:
-- [ ] All 4 skill folders created under `.claude/skills/`
-- [ ] All 5 files in their correct locations
-- [ ] `tf-plan/SKILL.md` shows no Write in allowed-tools (Screenshot 3)
-- [ ] `/scaffold-terraform` ran and generated all 5 Terraform files
-- [ ] `terraform init` completed
-- [ ] `/tf-plan` was triggered and Claude analyzed the output
-- [ ] Skills committed and visible in GitHub repo
+- [✔️] All 4 skill folders created under `.claude/skills/`
+- [✔️] All 5 files in their correct locations
+- [✔️] `tf-plan/SKILL.md` shows no Write in allowed-tools (Screenshot 3)
+- [✔️] `/scaffold-terraform` ran and generated all 5 Terraform files
+- [✔️] `terraform init` completed
+- [✔️] `/tf-plan` was triggered and Claude analyzed the output
+- [✔️] Skills committed and visible in GitHub repo
 
