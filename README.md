@@ -131,8 +131,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://tinyurl.com/mtpakc8b | https://tinyurl.com/4ezruae7 |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://tinyurl.com/5n8457ma | https://tinyurl.com/4tnnp3bv |
 | 02 | Agentic AI with Claude Code | ✅ Started | ⏳ Pending | https://tinyurl.com/yvpm6586 | https://tinyurl.com/kcnhw2s5 |
-| 03 | Linux for DevOps | ✅ Started | ⏳ Pending | — | https://tinyurl.com/3kw5ycxa |
-| 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
+| 03 | Linux for DevOps | ✅ Started | ⏳ Pending | https://tinyurl.com/s3h2ztks | https://tinyurl.com/3kw5ycxa |
+| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://tinyurl.com/38kkcdkm | — |
 | 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
@@ -144,8 +144,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
-**Status:** ✅ Completed Week-00 & Week-01<br>
-**Assignment:** ✅ Solved (00 & 01)
+**Status:** ✅ Completed Week-00 till Week-03<br>
+**Assignment:** ✅ Solved (till week-03)
 
 ---
 
