@@ -124,7 +124,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-<<<<<<< HEAD
+
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://tinyurl.com/mtpakc8b | https://tinyurl.com/4ezruae7 |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://tinyurl.com/5n8457ma | https://tinyurl.com/4tnnp3bv |
 | 02 | Agentic AI with Claude Code | ✅ Started | ⏳ Pending | https://tinyurl.com/yvpm6586 | https://tinyurl.com/kcnhw2s5 |
@@ -140,7 +140,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
-=======
+
 
 **Status:** ✅ Completed Week-00 till Week-03<br>
 **Assignment:** ✅ Solved (till week-03)
