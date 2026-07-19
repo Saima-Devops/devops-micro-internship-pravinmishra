@@ -4,6 +4,11 @@
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
+![Weeks](https://img.shields.io/badge/Weeks_Completed-3%2F15-green?style=for-the-badge)
+
+![Weeks](https://img.shields.io/badge/Weeks_Completed-0%2F14-green?style=for-the-badge)
+
+
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
 > Find all the required links & assignment guidelines from here [Required links](./dmi_cohort3_resources.md)
 
@@ -124,7 +129,6 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://tinyurl.com/mtpakc8b | https://tinyurl.com/4ezruae7 |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://tinyurl.com/5n8457ma | https://tinyurl.com/4tnnp3bv |
 | 02 | Agentic AI with Claude Code | ✅ Started | ⏳ Pending | https://tinyurl.com/yvpm6586 | https://tinyurl.com/kcnhw2s5 |
