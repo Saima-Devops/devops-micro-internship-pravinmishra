@@ -20,7 +20,8 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 #### Screenshot 1 — Output of `node -v && npm -v` showing installed versions
 
-![alt text](screenshots/assign2-img01.png)
+
+<img width="1291" height="472" alt="image" src="https://github.com/user-attachments/assets/a8977964-55fe-425c-8016-c96a69528531" />
 
 ---
 
@@ -34,7 +35,8 @@ Install Nginx, start the service, and confirm it is running.
 
 #### Screenshot 2 — Output of `systemctl status nginx --no-pager` showing Active (running)
 
-![alt text](screenshots/assign2-img02.png)
+<img width="1287" height="671" alt="image" src="https://github.com/user-attachments/assets/d8f99dd7-b9bf-4ae8-a5bc-b7a76445e92c" />
+
 
 ---
 
@@ -48,7 +50,8 @@ Clone the project repository and verify the project files are present.
 
 #### Screenshot 3 — Output of `ls` inside the `my-react-app` directory showing project files
 
-![alt text](screenshots/assign2-img03.png)
+<img width="970" height="702" alt="image" src="https://github.com/user-attachments/assets/8f06385a-89a1-4bde-9a92-7f009679bbda" />
+
 
 ---
 
@@ -62,7 +65,8 @@ Update `App.js` with your full name and the current date.
 
 #### Screenshot 4 — `nano App.js` open showing your full name and date filled in
 
-![alt text](screenshots/assign2-img04.png)
+<img width="1917" height="995" alt="image" src="https://github.com/user-attachments/assets/c9b6d659-8b89-43b7-bc6c-5ee8b0f3f74a" />
+
 
 ---
 
@@ -76,7 +80,7 @@ Install dependencies and generate the production build.
 
 #### Screenshot 5 — Output of `ls` inside `my-react-app` showing the `build/` folder generated
 
-![alt text](screenshots/assign2-img05.png)
+<img width="1917" height="627" alt="image" src="https://github.com/user-attachments/assets/c24bd555-5046-4417-993b-d46556da95b1" />
 
 ---
 
@@ -90,9 +94,7 @@ Copy the production build files to the Nginx web root directory.
 
 #### Screenshot 6 — Output of `ls /var/www/html/` showing the deployed build contents
 
-![alt text](screenshots/assign2-img06.png)
-
-
+<img width="1876" height="467" alt="image" src="https://github.com/user-attachments/assets/69451001-03de-4f4e-8779-5365f53f98f0" />
 
 ---
 
@@ -106,15 +108,17 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
 
-![alt text](screenshots/assign2-img08.png)
+<img width="1917" height="372" alt="image" src="https://github.com/user-attachments/assets/6ca49f37-1e04-4678-b5a9-45a1da240848" />
 
-![alt text](screenshots/assign2-img09.png)
+<img width="1866" height="502" alt="image" src="https://github.com/user-attachments/assets/2d4eed8f-6333-4d09-a2e8-125cdc8484cb" />
+
 
 ---
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
-![alt text](screenshots/assign2-img07.png)
+<img width="1917" height="701" alt="image" src="https://github.com/user-attachments/assets/c493a694-24af-43bc-b482-47f549a59b96" />
+
 
 ---
 
@@ -128,15 +132,15 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
 
-![alt text](screenshots/assign2-img11.png)
+<img width="1917" height="451" alt="image" src="https://github.com/user-attachments/assets/4de7f877-44f5-4ee8-878b-8e54d7cac17e" />
 
 ---
 
 #### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
-![alt text](screenshots/assign2-img12.png)
+<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/7b063b30-f326-46d2-90fb-0a91ef83ae76" />
 
-![alt text](screenshots/assign2-img14.png)
+<img width="1917" height="621" alt="image" src="https://github.com/user-attachments/assets/68359050-057e-48b0-95b0-fc1a5775fa6e" />
 
 ---
 
@@ -146,15 +150,14 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### LinkedIn Post URL
 
-https://tinyurl.com/s3h2ztks
-
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_aws-ec2-ubuntu-share-7484687219924983808-3hdw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
 #### Screenshot — LinkedIn post showing the deployed application
 
-![alt text](screenshots/assign2-img15.png)
+<img width="1217" height="917" alt="image" src="https://github.com/user-attachments/assets/9f43b1ff-d68c-41b6-b218-0e203b38dc7c" />
+
 
 ---
 
