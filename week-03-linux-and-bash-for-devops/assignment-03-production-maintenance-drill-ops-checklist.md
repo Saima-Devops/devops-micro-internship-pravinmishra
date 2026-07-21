@@ -20,25 +20,30 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-![alt text](screenshots/assign3-img1.png)
+<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/6ec4fa91-ac7b-44f7-8efe-43b55b042e65" />
+
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-![alt text](screenshots/assign3-img2.png)
+<img width="1917" height="592" alt="image" src="https://github.com/user-attachments/assets/db95d44f-c9ed-4f40-801a-9ddd0873c5a8" />
+
+
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-![alt text](screenshots/assign3-img3.png)
+<img width="1882" height="722" alt="image" src="https://github.com/user-attachments/assets/c430113c-cc71-42b7-b6d3-cc839d89644b" />
+
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-![alt text](screenshots/assign3-img4.png)
+<img width="1917" height="641" alt="image" src="https://github.com/user-attachments/assets/ccaabd99-935a-482b-9b57-bec6f86440cd" />
+
 
 ---
 
@@ -103,19 +108,21 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-![alt text](screenshots/assign3-img5.png)
+<img width="1856" height="506" alt="image" src="https://github.com/user-attachments/assets/44450545-0179-4564-bc4a-adccf08ddfcc" />
+
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-![alt text](screenshots/assign3-img6.png)
+<img width="1917" height="405" alt="image" src="https://github.com/user-attachments/assets/d3048ac8-87cb-49b4-a772-110bac0b7e3c" />
+
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-![alt text](screenshots/assign3-img7.png)
+<img width="1917" height="502" alt="image" src="https://github.com/user-attachments/assets/59f13b68-6d4a-4aab-b9ee-c58f4b807154" />
 
 ---
 
@@ -150,19 +157,20 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-![alt text](screenshots/assign3-img8.png)
+<img width="1917" height="842" alt="image" src="https://github.com/user-attachments/assets/32337af7-0a1d-4b29-8fbe-e89f7b90471e" />
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-![alt text](screenshots/assign3-img9.png)
+<img width="1917" height="322" alt="image" src="https://github.com/user-attachments/assets/382ce713-5010-483a-97c5-0293dfffe3de" />
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-![alt text](screenshots/assign3-img10.png)
+<img width="1917" height="727" alt="image" src="https://github.com/user-attachments/assets/0fabcb49-c94b-4750-a2d4-d53a40214714" />
+
 
 ---
 
@@ -207,25 +215,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-![alt text](screenshots/assign3-img11.png)
+<img width="1917" height="316" alt="image" src="https://github.com/user-attachments/assets/ba6587de-b14f-410a-9a07-d3df5648d988" />
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-![alt text](screenshots/assign3-img12.png)
+<img width="1917" height="192" alt="image" src="https://github.com/user-attachments/assets/f9629f05-2e9d-4db2-9a45-d582f19313fa" />
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-![alt text](screenshots/assign3-img13.png)
+<img width="1917" height="467" alt="image" src="https://github.com/user-attachments/assets/2c22d87f-b8c0-49f3-81c8-23e5a4018916" />
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-![alt text](screenshots/assign3-img14.png)
+<img width="1917" height="647" alt="image" src="https://github.com/user-attachments/assets/bc398393-b0cf-42e4-a2fe-4f1a3c327c81" />
 
 ---
 
@@ -256,19 +264,20 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-![alt text](screenshots/assign3-img17.png)
+<img width="1917" height="567" alt="image" src="https://github.com/user-attachments/assets/ff6dbd47-16ba-496d-937e-e904849b9ffc" />
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-![alt text](screenshots/assign3-img15.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d4617304-eb73-4408-9eb5-3882abc112e6" />
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-![alt text](screenshots/assign3-img16.png)
+<img width="1917" height="352" alt="image" src="https://github.com/user-attachments/assets/3087f4ab-36eb-4b9c-84ab-dd59b2f89550" />
+
 
 ---
 
@@ -292,19 +301,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-![alt text](screenshots/assign3-img20.png)
+<img width="1917" height="435" alt="image" src="https://github.com/user-attachments/assets/3d7ba3c6-0e05-4669-9d95-4f0f4deaf278" />
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-![alt text](screenshots/assign3-img21.png)
+<img width="1917" height="382" alt="image" src="https://github.com/user-attachments/assets/998d1e4d-7d38-4b47-b363-72ec74ae6126" />
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![alt text](screenshots/assign3-img19.png)
+<img width="1917" height="555" alt="image" src="https://github.com/user-attachments/assets/e1fcbe6e-23d9-4522-8478-e5e496f43a37" />
 
 ---
 
@@ -327,6 +336,7 @@ I fixed the issue by manually editing the Nginx configuration file and restoring
 **3. How can you avoid this kind of issue in real production systems?**
 
 To avoid this issue in production, always test the Nginx configuration with sudo nginx -t before reloading or restarting the service, keep a backup of the working configuration, and review configuration changes carefully before applying them.
+
 ---
 
 # Task 7 — Web Application Failure Simulation
@@ -339,14 +349,14 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-![alt text](screenshots/assign3-img20.png)
+<img width="1917" height="426" alt="image" src="https://github.com/user-attachments/assets/2fa9aed4-bdc6-4d36-8966-bdbfd9621b26" />
+
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![alt text](screenshots/assign3-img19.png)
-
+<img width="1917" height="555" alt="image" src="https://github.com/user-attachments/assets/df4a3980-3302-4e0f-b98b-18194ccd0578" />
 
 ---
 
@@ -420,13 +430,11 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 https://www.linkedin.com/posts/saima-usman_aws-ec2-ubuntu-activity-7484687223297097728-yWpq?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
-`Add your URL here`
-
 ---
 
 #### Screenshot — Published LinkedIn post
 
-![alt text](screenshots/assign3-img23.png)
+<img width="690" height="782" alt="image" src="https://github.com/user-attachments/assets/10f19aa3-cf4c-4e67-8f36-41f3c47d284d" />
 
 ---
 
