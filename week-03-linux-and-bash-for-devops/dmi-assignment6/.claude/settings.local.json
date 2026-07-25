@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR==2{print $5}')",
+      "Bash(swapon --show)"
+    ]
+  }
+}
