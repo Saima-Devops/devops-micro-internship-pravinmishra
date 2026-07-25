@@ -20,7 +20,7 @@ Verify the Ubuntu VM and Nginx are ready for deployment.
 
 #### Screenshot 0 — Output of `sudo systemctl status nginx --no-pager` showing Active (running)
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Download and extract the portfolio website template.
 
 #### Screenshot 1 — Output of `ls -la` showing the extracted project folder
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Update the website footer with your deployment details.
 
 #### Screenshot 2 — Nano editor open with the updated footer showing your Full Name, Group, Week, and Date
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img4.png)
 
 ---
 
@@ -62,13 +62,13 @@ Deploy the portfolio website to the Nginx web root.
 
 #### Screenshot 3 — Output of `sudo nginx -t` showing configuration test successful
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img3.png)
 
 ---
 
 #### Screenshot 4 — Output of `ls /var/www/html` showing deployed website files
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img12.png)
 
 ---
 
@@ -82,14 +82,15 @@ Verify the deployed website is publicly accessible and the footer contains your 
 
 #### Screenshot 5 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img6.png)
 
 ---
 
 #### Screenshot 6 — Browser showing the live website with your Full Name and deployment details in the footer
 
-Add your screenshot here.
 
+![alt text](screenshots/assign4-img7.png)
+![alt text](screenshots/assign4-img8.png)
 ---
 
 # Task 5 — Mini Real DevOps Operational Check
@@ -102,13 +103,13 @@ Verify the deployed website and Nginx service are healthy.
 
 #### Screenshot 7 — Output of `systemctl is-enabled nginx`
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img9.png)
 
 ---
 
 #### Screenshot 8 — Output of `curl -I http://localhost` showing 200 OK
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img10.png)
 
 ---
 
@@ -118,13 +119,13 @@ Add your screenshot here.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+https://www.linkedin.com/posts/saima-usman_aws-ec2-ubuntu-ugcPost-7486686582285062144-2jIs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
-Add your screenshot here.
+![alt text](screenshots/assign4-img11.png)
 
 ---
 
@@ -139,18 +140,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Screenshot 0: Nginx service status (active/running)
-- [ ] Screenshot 1: Website files downloaded and extracted
-- [ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
-- [ ] Screenshot 3: Nginx configuration test successful
-- [ ] Screenshot 4: Website files deployed to /var/www/html
-- [ ] Screenshot 5: Public IP retrieved
-- [ ] Screenshot 6: Live website accessible in browser with footer details
-- [ ] Screenshot 7: Nginx enabled on boot
-- [ ] Screenshot 8: Local HTTP response returns 200 OK
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [✔️] Screenshot 0: Nginx service status (active/running)
+- [✔️] Screenshot 1: Website files downloaded and extracted
+- [✔️] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
+- [✔️] Screenshot 3: Nginx configuration test successful
+- [✔️] Screenshot 4: Website files deployed to /var/www/html
+- [✔️] Screenshot 5: Public IP retrieved
+- [✔️] Screenshot 6: Live website accessible in browser with footer details
+- [✔️] Screenshot 7: Nginx enabled on boot
+- [✔️] Screenshot 8: Local HTTP response returns 200 OK
+- [✔️] LinkedIn post published and URL submitted
+- [✔️] Full Name visible in all required screenshots
+- [✔️] No sensitive data exposed
 
 ---
 
