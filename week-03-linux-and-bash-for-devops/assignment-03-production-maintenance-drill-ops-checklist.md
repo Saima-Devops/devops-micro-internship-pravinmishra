@@ -418,9 +418,7 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 #### LinkedIn Post URL
 
-https://www.linkedin.com/posts/saima-usman_aws-ec2-ubuntu-activity-7484687223297097728-yWpq?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
-
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_aws-ec2-ubuntu-share-7484687219924983808-3hdw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 

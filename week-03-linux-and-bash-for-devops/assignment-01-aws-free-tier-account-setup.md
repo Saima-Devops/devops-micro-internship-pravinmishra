@@ -61,9 +61,11 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-![alt text](screenshots/task2-img1.png)
+<img width="1917" height="882" alt="image" src="https://github.com/user-attachments/assets/de12534c-60be-4dde-8413-5072dd3dc5b2" />
 
-![alt text](screenshots/task2-img2.png)
+
+<img width="532" height="576" alt="image" src="https://github.com/user-attachments/assets/168cb166-1dd8-428d-b407-9a8e2556aaff" />
+
 
 ---
 

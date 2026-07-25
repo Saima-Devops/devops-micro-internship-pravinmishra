@@ -100,12 +100,6 @@ Verify MCP functionality by retrieving real-time data from your GitHub account u
 
 https://github.com/Saima-Devops/Ultimate-Agentic-DevOps-with-Claude-Code
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-05-mcp.md
-`________________________________________________________________`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-05-mcp.md
-
 ---
 
 ## Security Confirmation

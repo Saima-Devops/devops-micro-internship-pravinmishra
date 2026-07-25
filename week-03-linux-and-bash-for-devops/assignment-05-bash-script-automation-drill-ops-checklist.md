@@ -421,13 +421,7 @@ The script uses variables to store user information, an array to store tool name
 
 #### LinkedIn Post URL
 
-https://tinyurl.com/38kkcdkm
-
-<<<<<<< HEAD:week-03-linux-for-devops/assignment-05-bash-script-automation-drill-ops-checklist.md
-`________________________`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-03-linux-and-bash-for-devops/assignment-05-bash-script-automation-drill-ops-checklist.md
+https://www.linkedin.com/posts/saima-usman_devops-linux-bash-share-7483973193347534848-Kv5e/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 

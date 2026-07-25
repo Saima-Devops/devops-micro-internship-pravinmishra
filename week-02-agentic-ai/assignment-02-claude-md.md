@@ -121,8 +121,6 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 https://github.com/Saima-Devops/Ultimate-Agentic-DevOps-with-Claude-Code
 
-`Add your URL here`
-
 ---
 
 # Completion Checklist

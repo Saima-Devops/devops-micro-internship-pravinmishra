@@ -100,22 +100,12 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 https://github.com/Saima-Devops/Ultimate-Agentic-DevOps-with-Claude-Code
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-03-skills.md
-`_______________________________________________________________`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-03-skills.md
-
 ## LinkedIn post URL
 
-https://tinyurl.com/5e5cf8jt
+https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-agenticai-claudecode-ugcPost-7480734982999625728-v5g5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 `_______________________`
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-03-skills.md
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-03-skills.md
 ---
 
 # Completion Checklist

@@ -27,9 +27,6 @@ Save your screenshot in the `screenshots` folder and update the file name below.
 
 ![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
 
-
-Replace `task-1-chatgpt.png` with your actual screenshot file name.
-
 ---
 
 ## What I Learned (2–3 lines)
@@ -95,9 +92,6 @@ EpicReads bookstore has two application versions:
 Save your diagram image in the `screenshots` folder and update the file name below.
 
 ![Application Architecture Diagram](screenshots/task-3-diagram.png)
-
-
-Replace `task-3-diagram.png` with your actual diagram file name.
 
 ---
 
@@ -250,18 +244,12 @@ Add the following credit note at the end of your post:
 
 ## LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-https://tinyurl.com/yummtmue
+https://www.linkedin.com/posts/saima-usman_devops-networking-dns-share-7456034514381922304--2tn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 
 ---
 
 ## LinkedIn Post Backup Copy
-
-Paste the full text of your LinkedIn post here:
-
----
 
 🚀 My 𝐃𝐞𝐯𝐎𝐩𝐬 learning journey has been deeply focused on understanding the core building blocks of modern systems: 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 & 𝐍𝐞𝐭𝐰𝐨𝐫𝐤𝐢𝐧𝐠, 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐀𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐞, and 𝐃𝐍𝐒 (𝐃𝐨𝐦𝐚𝐢𝐧 𝐍𝐚𝐦𝐞 𝐒𝐲𝐬𝐭𝐞𝐦).
 
@@ -275,7 +263,7 @@ For example, 𝐃𝐍𝐒 (Domain Name System) acts as the internet's phonebook.
 
 
 
-I also learned that if **epicreads.com** needs to point to the IPv4 address **xx.xxx.xxx.xxx**, the correct DNS record to use is an **A record**, since it maps a domain directly to an IPv4 address. Interestingly, the application port (such as **3000**) isn't managed by DNS—it is handled by the web server or application configuration after the domain has already been resolved to the correct IP.
+I also learned that if **epicreads.com** needs to point to the IPv4 address **00.000.000.000**, the correct DNS record to use is an **A record**, since it maps a domain directly to an IPv4 address. Interestingly, the application port (such as **3000**) isn't managed by DNS—it is handled by the web server or application configuration after the domain has already been resolved to the correct IP.
 
 
 

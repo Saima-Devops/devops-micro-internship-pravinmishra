@@ -150,7 +150,6 @@ Include this line:
 
 (https://www.linkedin.com/pulse/saimas-version-20-rise-ai-driven-devops-engineer-saima-usman-i9gef)
 
-`Add your URL here`
 
 ---
 
@@ -389,16 +388,14 @@ I will follow a fixed daily deep work routine: 60–90 minutes of focused study/
 
 ### LinkedIn Post
 
-https://lnkd.in/dHvbC5Z9
-
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_building-focus-and-discipline-journey-ugcPost-7477656854412722177-J5j4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
 ## 10. Proof of Work
 
 - LinkedIn Post URL: (https://www.linkedin.com/in/saima-usman/recent-activity/articles/)
-- Blog / Medium : (https://tinyurl.com/mryuhkhf), (https://tinyurl.com/4tnnp3bv)
+- Blog / Medium : https://medium.com/@saimausman.dxb/-524aa023a71e
 
 ---
 
@@ -424,7 +421,3 @@ It helps learners build strong DevOps foundations with hands-on experience.
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track*
 
 ----
-
-## My Badges
-
-![alt text](/badges/week-00.svg)  ![alt text](/badges/week-01.svg)

@@ -41,6 +41,7 @@ Fork the provided GitHub repository, clone it to your local machine, and open it
 #### Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
 
 ![Project Tree](screenshots/image-06.png)
+
 ---
 
 # Task 3 — Observe the Agentic Loop
@@ -77,12 +78,6 @@ Interact with Claude Code and observe how it performs the Agentic Loop (Gather �
 ## GitHub Repository URL
 
 https://github.com/Saima-Devops/devops-micro-internship-pravinmishra/tree/main
-
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-01-setup-agentic-loop.md
-`___________________________________________________________________`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-01-setup-agentic-loop.md
 
 ---
 

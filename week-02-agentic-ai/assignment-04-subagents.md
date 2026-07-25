@@ -112,12 +112,6 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 https://github.com/Saima-Devops/Ultimate-Agentic-DevOps-with-Claude-Code
 
-<<<<<<< HEAD:week-02-agentic-ai/solution-assignment-04-subagents.md
-`_______________________________________________________________`
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-02-agentic-ai/assignment-04-subagents.md
-
 ---
 
 # Completion Checklist

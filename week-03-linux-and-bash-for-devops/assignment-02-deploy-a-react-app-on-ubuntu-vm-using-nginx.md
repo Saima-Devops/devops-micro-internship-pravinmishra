@@ -1,4 +1,4 @@
-# Assignment 2 — Deploy a React App on Ubuntu VM Using Nginx
+# Assignment 3 — Production Maintenance Drill (OPS Checklist)
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -6,137 +6,419 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Purpose
 
-In this assignment, you will deploy a React application on an Ubuntu EC2 instance and serve it using Nginx. You will provision a Linux server, install the required tools, personalize the application with your details, and verify that it is publicly accessible via a browser.
+In this assignment, you will treat your already deployed React application (on Ubuntu VM with Nginx) as a live production system. You will perform structured operational checks covering network validation, service health, log analysis, resource monitoring, configuration verification, and incident simulation with recovery — mirroring real on-call DevOps responsibilities.
 
 ---
 
-# Task 1 — Setup Environment (Node.js & npm)
+# Task 1 — Server Access & Networking Validation
 
 ## Goal
 
-Install Node.js and npm on the Ubuntu VM and verify the installation.
+Verify that the deployed React application is reachable from the browser and confirm basic network connectivity of the Ubuntu VM.
 
 ### Evidence
 
-#### Screenshot 1 — Output of `node -v && npm -v` showing installed versions
+#### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-![alt text](screenshots/assign2-img01.png)
+<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/6ec4fa91-ac7b-44f7-8efe-43b55b042e65" />
+
 
 ---
 
-# Task 2 — Setup Environment (Nginx)
+#### Screenshot 2 — Output of `ip a`
+
+<img width="1917" height="592" alt="image" src="https://github.com/user-attachments/assets/db95d44f-c9ed-4f40-801a-9ddd0873c5a8" />
+
+
+
+---
+
+#### Screenshot 3 — Output of `sudo ss -tulpen`
+
+<img width="1882" height="722" alt="image" src="https://github.com/user-attachments/assets/c430113c-cc71-42b7-b6d3-cc839d89644b" />
+
+
+---
+
+#### Screenshot 4 — Output of `sudo ufw status`
+
+<img width="1917" height="641" alt="image" src="https://github.com/user-attachments/assets/ccaabd99-935a-482b-9b57-bec6f86440cd" />
+
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. What proves Nginx is listening on 0.0.0.0:80?**
+
+The output of:
+
+```
+sudo ss -tulpn | grep :80
+```
+
+showing:
+
+```
+LISTEN 0 511 0.0.0.0:80
+```
+
+proves Nginx is listening on `0.0.0.0:80`
+
+---
+
+**2. What proves SSH is active on port 22?**
+
+The output of:
+
+```
+sudo ss -tulpn | grep :22
+```
+
+showing:
+
+```
+LISTEN 0 128 0.0.0.0:22
+```
+
+proves that SSH is active and listening on `port 22`
+
+---
+
+**3. Did you find any unexpected open ports? Explain briefly.**
+
+No. Only the expected ports were open:
+
+22 for SSH remote access.
+80 for the Nginx web server.
+
+No unexpected open ports were found.
+
+---
+
+# Task 2 — Service Health & Systemd Validation (Nginx)
 
 ## Goal
 
-Install Nginx, start the service, and confirm it is running.
+Verify that Nginx is properly installed, running, enabled at boot, and safely configured.
 
 ### Evidence
 
-#### Screenshot 2 — Output of `systemctl status nginx --no-pager` showing Active (running)
+#### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-![alt text](screenshots/assign2-img02.png)
+<img width="1856" height="506" alt="image" src="https://github.com/user-attachments/assets/44450545-0179-4564-bc4a-adccf08ddfcc" />
+
 
 ---
 
-# Task 3 — Clone React Application
+#### Screenshot 2 — Output of `sudo nginx -t`
+
+<img width="1917" height="405" alt="image" src="https://github.com/user-attachments/assets/d3048ac8-87cb-49b4-a772-110bac0b7e3c" />
+
+
+---
+
+#### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
+
+<img width="1917" height="502" alt="image" src="https://github.com/user-attachments/assets/59f13b68-6d4a-4aab-b9ee-c58f4b807154" />
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. What happens if Nginx fails to restart in production?**
+
+If Nginx fails to restart in production, the website or web application becomes unavailable, and users will receive connection errors (such as 502, 503, or no response) until the issue is fixed and Nginx is running again.
+
+---
+
+**2. What's your basic rollback plan?**
+
+If the new configuration causes problems, I would:
+
+1. Restore the previous Nginx configuration from a backup.
+2. Test the configuration with sudo nginx -t.
+3. Restart Nginx using sudo systemctl restart nginx.
+4. Verify the website is accessible again.
+
+---
+
+# Task 3 — Logs & Request Trace
 
 ## Goal
 
-Clone the project repository and verify the project files are present.
+Verify real traffic flow and analyze logs to understand system behavior and errors.
 
 ### Evidence
 
-#### Screenshot 3 — Output of `ls` inside the `my-react-app` directory showing project files
+#### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-![alt text](screenshots/assign2-img03.png)
+<img width="1917" height="842" alt="image" src="https://github.com/user-attachments/assets/32337af7-0a1d-4b29-8fbe-e89f7b90471e" />
 
 ---
 
-# Task 4 — Modify Application (Personalization)
+#### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
+
+<img width="1917" height="322" alt="image" src="https://github.com/user-attachments/assets/382ce713-5010-483a-97c5-0293dfffe3de" />
+
+---
+
+#### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
+
+<img width="1917" height="727" alt="image" src="https://github.com/user-attachments/assets/0fabcb49-c94b-4750-a2d4-d53a40214714" />
+
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. Were there any errors in the logs?**
+
+- If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
+- If no, explain what it means if the error log is empty or shows no recent errors during your check.
+
+No, I didnt get any ERROR. I got this reposnse:
+
+```
+2026/07/18 05:28:24 [notice] 28886#28886: using inherited sockets from "5;6;"
+```
+
+This message indicates that Nginx restarted or reloaded successfully and is using inherited sockets to provide a smooth transition. It does not indicate any problem with my server or configuration. If there were actual issues, I would typically see log levels such as [error], [crit], or [emerg].
+
+---
+
+**2. If there were no errors, what does that indicate about the system?**
+
+If there were no errors in the Nginx error log, it indicates that Nginx is running normally, the configuration is valid, and the web server is operating without any detected issues at that time.
+
+---
+
+**3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
+
+Yes. The curl requests appeared in the Nginx access logs, proving that the requests successfully reached the Nginx web server, were processed, and were logged correctly. This confirms that the network traffic flow from the client to the server is working as expected.
+
+---
+
+# Task 4 — System Resource Health Check (Capacity Red Flags)
 
 ## Goal
 
-Update `App.js` with your full name and the current date.
+Assess server capacity and detect potential performance or failure risks.
 
 ### Evidence
 
-#### Screenshot 4 — `nano App.js` open showing your full name and date filled in
+#### Screenshot 1 — Output of `uptime`
 
-![alt text](screenshots/assign2-img04.png)
+<img width="1917" height="316" alt="image" src="https://github.com/user-attachments/assets/ba6587de-b14f-410a-9a07-d3df5648d988" />
 
 ---
 
-# Task 5 — Build React Application
+#### Screenshot 2 — Output of `free -h`
+
+<img width="1917" height="192" alt="image" src="https://github.com/user-attachments/assets/f9629f05-2e9d-4db2-9a45-d582f19313fa" />
+
+---
+
+#### Screenshot 3 — Output of `df -h`
+
+<img width="1917" height="467" alt="image" src="https://github.com/user-attachments/assets/2c22d87f-b8c0-49f3-81c8-23e5a4018916" />
+
+---
+
+#### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
+
+<img width="1917" height="647" alt="image" src="https://github.com/user-attachments/assets/bc398393-b0cf-42e4-a2fe-4f1a3c327c81" />
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
+
+Disk is the most critical resource at the moment because it has the highest utilization (60% used) compared to memory (about 36% used). Although there is still 2.8 GB of free space, disk usage is the resource that should be monitored most closely to prevent running out of storage.
+If disk space becomes full, Nginx cannot write logs and the server may fail to store files or operate correctly. CPU and memory are important, but in a typical React and Nginx deployment they usually remain low under normal traffic.
+
+---
+
+**2. What happens if disk becomes 100% full in a production server?**
+
+If the disk reaches 100% full, the server may be unable to write log files, save data, create temporary files, or perform updates. This can cause applications such as Nginx to fail or become unstable, leading to service outages and errors for users.
+
+---
+
+# Task 5 — Configuration & Deployment Verification
 
 ## Goal
 
-Install dependencies and generate the production build.
+Ensure the correct React build is deployed and Nginx is serving it properly.
 
 ### Evidence
 
-#### Screenshot 5 — Output of `ls` inside `my-react-app` showing the `build/` folder generated
+#### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-![alt text](screenshots/assign2-img05.png)
+<img width="1917" height="567" alt="image" src="https://github.com/user-attachments/assets/ff6dbd47-16ba-496d-937e-e904849b9ffc" />
 
 ---
 
-# Task 6 — Deploy React Build to Nginx Web Root
+#### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d4617304-eb73-4408-9eb5-3882abc112e6" />
+
+---
+
+#### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
+
+<img width="1917" height="352" alt="image" src="https://github.com/user-attachments/assets/3087f4ab-36eb-4b9c-84ab-dd59b2f89550" />
+
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. How do you confirm that the correct version of the application is deployed?**
+
+We can compare the deployed files in /var/www/html with the latest production build. Also I can confirm the correct version by opening the application in a browser using the server's public IP and verifying that the latest changes are displayed.
+
+---
+
+# Task 6 — Nginx Configuration Failure Simulation
 
 ## Goal
 
-Copy the production build files to the Nginx web root directory.
+Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 ### Evidence
 
-#### Screenshot 6 — Output of `ls /var/www/html/` showing the deployed build contents
+#### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-![alt text](screenshots/assign2-img06.png)
-
-
+<img width="1917" height="435" alt="image" src="https://github.com/user-attachments/assets/3d7ba3c6-0e05-4669-9d95-4f0f4deaf278" />
 
 ---
 
-# Task 7 — Configure Nginx for React Application
+#### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
+
+<img width="1917" height="382" alt="image" src="https://github.com/user-attachments/assets/998d1e4d-7d38-4b47-b363-72ec74ae6126" />
+
+---
+
+#### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
+
+<img width="1917" height="555" alt="image" src="https://github.com/user-attachments/assets/e1fcbe6e-23d9-4522-8478-e5e496f43a37" />
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. What caused the configuration failure?**
+
+The configuration failure was caused by a missing closing curly brace (}) in the Nginx configuration file. This created a syntax error, causing sudo nginx -t to fail until the missing bracket was restored.
+
+---
+
+**2. How did you fix the issue?**
+
+I fixed the issue by manually editing the Nginx configuration file and restoring the missing closing curly brace (}). After saving the file, I verified the configuration with sudo nginx -t, which confirmed that the syntax was correct.
+
+---
+
+**3. How can you avoid this kind of issue in real production systems?**
+
+To avoid this issue in production, always test the Nginx configuration with sudo nginx -t before reloading or restarting the service, keep a backup of the working configuration, and review configuration changes carefully before applying them.
+
+---
+
+# Task 7 — Web Application Failure Simulation
 
 ## Goal
 
-Apply Nginx configuration for React routing and confirm the service is active.
+Simulate missing deployment content and recover the application safely.
 
 ### Evidence
 
-#### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
+#### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-![alt text](screenshots/assign2-img08.png)
+<img width="1917" height="426" alt="image" src="https://github.com/user-attachments/assets/2fa9aed4-bdc6-4d36-8966-bdbfd9621b26" />
 
-![alt text](screenshots/assign2-img09.png)
-
----
-
-#### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
-
-![alt text](screenshots/assign2-img07.png)
 
 ---
 
-# Task 8 — Test Deployment
+#### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
+
+<img width="1917" height="555" alt="image" src="https://github.com/user-attachments/assets/df4a3980-3302-4e0f-b98b-18194ccd0578" />
+
+---
+
+### Notes
+
+Answer the following in your own words:
+
+**1. What caused the application to break in this scenario?**
+
+The application broke because the Nginx configuration contained a syntax error (a missing closing }). As a result, Nginx could not load the configuration correctly, preventing the web server from serving the application until the error was fixed.
+
+---
+
+**2. How did you fix the issue and restore the application?**
+
+I fixed the issue by manually editing the Nginx configuration file and restoring the missing closing curly brace (}). After saving the file, I verified the configuration with sudo nginx -t, which confirmed that the syntax was correct.
+
+---
+
+**3. What steps would you take to prevent this kind of issue in real production systems?**
+
+Write your answer here.
+
+---
+
+# Task 8 — Security & Reliability Review
 
 ## Goal
 
-Verify the React application is publicly accessible via the server's public IP.
+Review and reflect on the security and reliability practices applied during this assignment.
 
-### Evidence
+### Security & Reliability Notes
 
-#### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
+Answer the following in your own words:
 
-![alt text](screenshots/assign2-img11.png)
+**1. Why is SSH key-based authentication more secure than sharing passwords?**
+
+SSH key-based authentication is more secure because it uses a public/private key pair instead of a password. The private key is never transmitted over the network, making it much more resistant to brute-force attacks, password guessing, and credential theft.
 
 ---
 
-#### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
+**2. Why should only required ports be open on a production server?**
 
-![alt text](screenshots/assign2-img12.png)
+Only the required ports should be open on a production server to reduce the attack surface. Closing unnecessary ports helps prevent unauthorized access and lowers the risk of security vulnerabilities being exploited.
 
-![alt text](screenshots/assign2-img14.png)
+---
+
+**3. Why is it important for Nginx to be enabled on boot?**
+
+It is important for Nginx to be enabled on boot so that it starts automatically whenever the server restarts, ensuring the website remains available without requiring manual intervention.
+
+---
+
+**4. What are the risks of sharing secrets, keys, or credentials publicly?**
+
+Sharing secrets, keys, or credentials publicly can allow unauthorized users to access your server or accounts, leading to data theft, service disruption, unauthorized changes, and potential financial or security losses.
+
+---
+
+**5. Why should cloud resources be stopped or terminated when they are no longer needed?**
+
+Cloud resources should be stopped or terminated when they are no longer needed to avoid unnecessary costs, reduce resource waste, and minimize potential security risks from unused servers.
 
 ---
 
@@ -146,15 +428,13 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### LinkedIn Post URL
 
-https://tinyurl.com/s3h2ztks
-
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_aws-ec2-ubuntu-activity-7484687223297097728-yWpq?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
-#### Screenshot — LinkedIn post showing the deployed application
+#### Screenshot — Published LinkedIn post
 
-![alt text](screenshots/assign2-img15.png)
+<img width="690" height="782" alt="image" src="https://github.com/user-attachments/assets/10f19aa3-cf4c-4e67-8f36-41f3c47d284d" />
 
 ---
 
@@ -168,16 +448,16 @@ https://tinyurl.com/s3h2ztks
 
 # Completion Checklist
 
-- [✔️] Node.js and npm installed and verified (Screenshot 1)
-- [✔️] Nginx installed and running (Screenshot 2)
-- [✔️] Repository cloned and files verified (Screenshot 3)
-- [✔️] App.js updated with full name and date (Screenshot 4)
-- [✔️] Production build generated (Screenshot 5)
-- [✔️] Build files deployed to Nginx web root (Screenshot 6)
-- [✔️] Nginx configured and active (Screenshots 7 & 8)
-- [✔️] Public IP retrieved (Screenshot 9)
-- [✔️] React app accessible in browser with personal details visible (Screenshot 10)
+- [✔️] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
+- [✔️] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
+- [✔️] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
+- [✔️] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
+- [✔️] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
+- [✔️] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
+- [✔️] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
+- [✔️] Task 8: Security & Reliability Notes answered
 - [✔️] LinkedIn post published and URL submitted
+- [✔️] Full Name visible in all required screenshots
 - [✔️] No sensitive data exposed
 
 ---
