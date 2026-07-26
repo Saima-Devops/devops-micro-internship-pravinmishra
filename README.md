@@ -4,7 +4,7 @@
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-![Weeks](https://img.shields.io/badge/Weeks_Completed-3%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-4%2F15-green?style=for-the-badge)
 
 ![Weeks](https://img.shields.io/badge/Weeks_Completed-0%2F14-green?style=for-the-badge)
 
@@ -133,8 +133,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://tinyurl.com/5n8457ma | https://tinyurl.com/4tnnp3bv |
 | 02 | Agentic AI with Claude Code | ✅ Started | ⏳ Pending | https://tinyurl.com/yvpm6586 | https://tinyurl.com/kcnhw2s5 |
 | 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://tinyurl.com/s3h2ztks | https://tinyurl.com/3kw5ycxa |
-| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://tinyurl.com/38kkcdkm | — |
-| 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://tinyurl.com/38kkcdkm | https://tinyurl.com/4t5yjm4a |
+| 05 | Git & GitHub | ✅ Started | ⏳ Pending | — | — |
 | 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
