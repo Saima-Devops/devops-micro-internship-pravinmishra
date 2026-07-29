@@ -129,7 +129,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 02 | Agentic AI with Claude Code | ✅ Started | ⏳ Pending | https://tinyurl.com/yvpm6586 | https://tinyurl.com/kcnhw2s5 |
 | 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://tinyurl.com/s3h2ztks | https://tinyurl.com/3kw5ycxa |
 | 04 | Bash Scripting | ✅ Started | ✅ Completed | https://tinyurl.com/38kkcdkm | https://tinyurl.com/4t5yjm4a |
-| 05 | Git & GitHub | ✅ Started | ⏳ Pending | — | — |
+| 05 | Git & GitHub | ✅ Started | ✅ Completed | https://tinyurl.com/3ypxts6j| — |
 | 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
