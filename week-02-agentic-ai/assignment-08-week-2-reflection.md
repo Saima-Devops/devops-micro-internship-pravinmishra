@@ -46,15 +46,13 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![alt text](screenshots/W02-Assignment-07-img8.png)
 
 ---
 
 ### Submission Field
 
-Blog Link:
-
-`Add your URL here`
+https://medium.com/@saimausman.dxb/an-exciting-journey-into-the-world-of-agentic-ai-and-claude-code-43940d55c2f1
 
 ---
 
@@ -92,23 +90,35 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![alt text](screenshots/W02-Assignment-07-img7.png)
 
 ---
 
 ### Submission Field
 
-LinkedIn Post Content (copy-paste here):
+Week 2 of the DevOps Micro Internship (DMI) Cohort 3 has been an exciting journey into the world of Agentic AI and Claude Code.
 
-```
-Paste your LinkedIn post content here
-```
+This week, I explored how AI can become more than just a coding assistant by learning concepts such as Claude Code, Skills, Hooks, Permissions, Memory, Subagents, and the Model Context Protocol (MCP).
+
+Some of my key takeaways include: \
+✔️Configuring Hooks to block destructive prompts and unsafe infrastructure commands. \
+✔️Using Permissions to define what AI agents are allowed to execute. \
+✔️Implementing Project Memory (MEMORY.md) so Claude Code can remember project-specific knowledge across sessions. \
+✔️Understanding how governance and safety are essential when integrating AI into software development workflows.
+
+One of the biggest lessons for me was that effective AI-assisted development is not only about writing better prompts—it is about building reliable systems with clear boundaries, persistent context, and human oversight.
+
+I'm excited to continue learning and applying these concepts throughout the internship while strengthening my DevOps and Cloud Engineering skills.
+
+**P.S. This post is part of the DevOps Micro Internship with Agentic AI Cohort 3 by Pravin Mishra. You can begin your DevOps journey by joining the DMI waiting list. (https://lnkd.in/dEyT5FR2)
+
+#DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps #LearningInPublic #CloudComputing #Automation #AI #GitHub #SoftwareEngineering
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-agenticai-claudecode-share-7488603332509593602-AwAO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
@@ -124,15 +134,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [✔️] Blog written with required structure
+* [✔️] Blog includes at least 2–3 Week 2 topics
+* [✔️] Blog is publicly accessible
+* [✔️] LinkedIn post created
+* [✔️] Required P.S. line included
+* [✔️] LinkedIn post content copied in submission field
+* [✔️] Blog link added
+* [✔️] LinkedIn post link added
+* [✔️] Screenshots added to GitHub repo
 
 ---
 
