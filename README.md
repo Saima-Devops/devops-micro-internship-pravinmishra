@@ -124,13 +124,13 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://tinyurl.com/mtpakc8b | https://tinyurl.com/4ezruae7 |
-| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://tinyurl.com/5n8457ma | https://tinyurl.com/4tnnp3bv |
-| 02 | Agentic AI with Claude Code | ✅ Started | ✅ Completed | https://tinyurl.com/yvpm6586 | https://tinyurl.com/kcnhw2s5 |
-| 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://tinyurl.com/s3h2ztks | https://tinyurl.com/3kw5ycxa |
-| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://tinyurl.com/38kkcdkm | https://tinyurl.com/4t5yjm4a |
-| 05 | Git & GitHub | ✅ Started | ✅ Completed | https://tinyurl.com/3ypxts6j| https://tinyurl.com/4j2a7j6p |
-| 06 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/saima-usman_100daysofdevops-devopsjourney-networkingbasics-share-7456014082832220160-8qHg/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/decoding-the-web-a-professionals-guide-to-how-the-internet-actually-works-ad0bb8ef95a1?sharedUserId=saimausman.dxb |
+| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/saima-usman_building-focus-and-discipline-journey-ugcPost-7477656854412722177-J5j4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/-524aa023a71e?sharedUserId=saimausman.dxb |
+| 02 | Agentic AI with Claude Code | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-agenticai-claudecode-ugcPost-7480734982999625728-v5g5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/an-exciting-journey-into-the-world-of-agentic-ai-and-claude-code-43940d55c2f1 |
+| 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_aws-ec2-reactjs-share-7483482307090190337--FeG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://www.linkedin.com/pulse/my-devops-learning-journey-starting-linux-saima-usman-1elpf |
+| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-linux-bash-share-7483973193347534848-Kv5e/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/ai-assisted-linux-incident-triage-with-bash-and-claude-code-building-an-agentic-devops-workflow-8a40ff5706b2?sharedUserId=saimausman.dxb |
+| 05 | Git & GitHub | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-git-githooks-share-7487585723110486016-3vQQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/from-git-init-to-ai-assisted-git-safety-my-journey-learning-git-github-in-the-devops-micro-9961149f79ed?sharedUserId=saimausman.dxb |
+| 06 | DevOps Lifecycle & Agile | ✅ Started | ⏳ Pending | — | — |
 | 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
