@@ -28,7 +28,14 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+**Answers**
+
+**Mode:** Solo Mode
+
+**PO:** Prioritized UI improvements that provide the highest user value and improve discoverability and trust.
+**SM:** Ensured the backlog was refined, stories were estimated, Sprint 1 had a clear goal, and work stayed within scope.
+**Dev Lead:** Implemented the selected UI-only improvement and verified that it met the acceptance criteria.
+**DevOps Lead:** Committed the change, deployed it to the hosting environment, and verified the live result.
 
 ---
 
@@ -42,7 +49,9 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-01.png)
+
+![alt text](screenshots/w05-as-04-02.png)
 
 ---
 
@@ -56,7 +65,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-03.png)
 
 ---
 
@@ -70,13 +79,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-04.png)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-05.png)
 
 ---
 
@@ -90,15 +99,23 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
-
+![alt text](screenshots/w05-as-04-06.png)
 ---
 
 ### Notes
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+| Story | Points | Reasoning / Debate |
+|---|---:|---|
+| **Hero tagline clarity** | **1** | **1 point** because this is a simple text-only change with minimal implementation and verification effort. In Solo Mode, I considered 1 point appropriate because there is very little technical risk. |
+| **Primary CTA color** | **1** | **1 point** because this is a straightforward CSS/color change with simple visual verification. I considered 1 point sufficient because no structural changes are required. |
+| **Job detail Apply Now CTA** | **1** | **1 point** because this is a small UI addition with a simple link and basic accessibility verification. I considered 1 point appropriate due to the limited scope. |
+| **Footer trust links** | **1** | **1 point** because adding two navigation links is a small UI change with minimal implementation and testing. No significant technical complexity was identified during Solo Mode estimation. |
+| **Posted on date** | **1** | **1 point** because it can be implemented as a simple static UI text addition. I considered 1 point sufficient because the acceptance criteria require only a human-readable date format. |
+| **Job card typography** | **2** | **2 points** because CSS changes need to be applied consistently across job cards and visually checked. I considered 1 point initially, but chose 2 because multiple cards and responsive presentation require additional verification. |
+| **Remote badge** | **2** | **2 points** because the REMOTE badge needs to appear correctly on applicable job cards and requires additional UI verification. I considered 1 point initially, but 2 better reflects the card-level handling involved. |
+| **Advanced search labels** | **2** | **2 points** because several form labels/placeholders need to be updated and their alignment verified. I considered 1 point, but selected 2 because multiple form elements are involved. |
 
 ---
 
@@ -112,13 +129,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-07.png)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-08.png)
 
 ---
 
@@ -132,7 +149,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![alt text](screenshots/w05-as-04-09.png)
 
 ---
 
@@ -146,19 +163,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![alt text](screenshots/w05-assinmt-04-2.png)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![alt text](screenshots/w05-assinmt-04-1.png)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![alt text](screenshots/w05-assinmt-04-3.png)
 
 ---
 
@@ -172,7 +189,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![alt text](screenshots/w05-assinmt-04-4.png)
 
 ---
 
@@ -186,15 +203,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_devops-jira-scrum-ugcPost-7491821702637690880-4E6A/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/w05-assinmt-04-5.png)
 
 ---
 
@@ -208,18 +223,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
-- [ ] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
-- [ ] Task 3: UI improvement Epic created (Screenshot 3)
-- [ ] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
-- [ ] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
-- [ ] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
-- [ ] Task 7: Burndown Chart opened (Screenshot 9)
-- [ ] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
-- [ ] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
-- [ ] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [✔️] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
+- [✔️] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
+- [✔️] Task 3: UI improvement Epic created (Screenshot 3)
+- [✔️] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
+- [✔️] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
+- [✔️] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
+- [✔️] Task 7: Burndown Chart opened (Screenshot 9)
+- [✔️] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
+- [✔️] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
+- [✔️] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
+- [✔️] Full Name visible in required screenshots
+- [✔️] No sensitive data exposed
 
 ---
 

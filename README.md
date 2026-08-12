@@ -4,7 +4,7 @@
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-![Weeks](https://img.shields.io/badge/Weeks_Completed-4%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-6%2F15-green?style=for-the-badge)
 
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
@@ -72,11 +72,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile
 
-
-<!-- Week 05 → DevOps Lifecycle & Agile -->
-<!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
 
 <!-- Week 06 → AWS Cloud -->
 <!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
@@ -130,8 +127,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_aws-ec2-reactjs-share-7483482307090190337--FeG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://www.linkedin.com/pulse/my-devops-learning-journey-starting-linux-saima-usman-1elpf |
 | 04 | Bash Scripting | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-linux-bash-share-7483973193347534848-Kv5e/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/ai-assisted-linux-incident-triage-with-bash-and-claude-code-building-an-agentic-devops-workflow-8a40ff5706b2?sharedUserId=saimausman.dxb |
 | 05 | Git & GitHub | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-git-githooks-share-7487585723110486016-3vQQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/from-git-init-to-ai-assisted-git-safety-my-journey-learning-git-github-in-the-devops-micro-9961149f79ed?sharedUserId=saimausman.dxb |
-| 06 | DevOps Lifecycle & Agile | ✅ Started | ⏳ Pending | — | — |
-| 07 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | DevOps Lifecycle & Agile | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_mcp-modelcontextprotocol-agenticai-share-7493224575980339200-rf0j/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | — |
+| 07 | AWS Cloud | ✅ Started | ⏳ Pending | — | — |
 | 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
@@ -142,7 +139,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 
 **Status:** ✅ Completed Week-00 till Week-04<br>
-**Assignment:** ✅ Solved (till week-04)
+**Assignment:** ✅ Solved (till week-05)
 
 ---
 
