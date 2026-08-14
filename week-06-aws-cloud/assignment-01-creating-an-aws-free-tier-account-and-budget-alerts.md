@@ -30,7 +30,7 @@ In the Billing Dashboard, create a monthly Cost Budget with a name, amount, and 
 
 #### Screenshot 1 — AWS Budget setup page showing the budget name, budget amount, and alert thresholds
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-01-01.png)
 
 ---
 
@@ -40,7 +40,7 @@ Answer the following in your own words:
 
 **1. Why is it important to set up budget alerts when using an AWS account?**
 
-Write your answer here.
+AWS budget alerts are important because they help monitor cloud spending and prevent unexpected charges. AWS resources such as EC2 instances, storage, databases, and other services can generate costs if they are left running or are used beyond the Free Tier limits. By setting alerts at thresholds such as 50%, 80%, and 100% of the monthly budget, I can receive early notifications when my spending is increasing. This gives me an opportunity to investigate the resources causing the costs and take corrective action before the bill becomes higher than expected. Budget alerts are therefore useful for maintaining cost visibility, financial control, and responsible cloud resource management.
 
 ---
 
@@ -53,13 +53,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Logged in to the AWS Management Console
-- [ ] Monthly Cost Budget created with name, amount, and start month
-- [ ] Budget alert thresholds and notification email configured
-- [ ] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
-- [ ] Notes question answered
-- [ ] No sensitive billing or account information exposed
+- [✔️] AWS Free Tier account created and Basic Support Plan (Free) selected
+- [✔️] Logged in to the AWS Management Console
+- [✔️] Monthly Cost Budget created with name, amount, and start month
+- [✔️] Budget alert thresholds and notification email configured
+- [✔️] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
+- [✔️] Notes question answered
+- [✔️] No sensitive billing or account information exposed
 
 ---
 

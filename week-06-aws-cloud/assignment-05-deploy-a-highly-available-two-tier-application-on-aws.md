@@ -10,11 +10,54 @@ In this assignment, you will design and deploy a highly available two-tier web a
 
 ---
 
+## Final Architecture
+
+```
+                         INTERNET
+                             |
+                             v
+                  +----------------------+
+                  | Internet Gateway     |
+                  +----------+-----------+
+                             |
+                     VPC 10.0.0.0/16
+                             |
+             +---------------+---------------+
+             |                               |
+          AZ-1                             AZ-2
+             |                               |
+   +---------+---------+           +---------+---------+
+   | Public Subnet 1   |           | Public Subnet 2   |
+   |                   |           |                   |
+   | ALB Node          |           | ALB Node          |
+   | EC2 / ASG         |           | EC2 / ASG         |
+   +---------+---------+           +---------+---------+
+             |                               |
+             +---------------+---------------+
+                             |
+                       Private Network
+                             |
+              +--------------+--------------+
+              |                             |
+      Private Subnet 1              Private Subnet 2
+              |                             |
+         RDS AZ-1                       RDS AZ-2
+              \                             /
+               \       Multi-AZ RDS        /
+                +-------------------------+
+```
+
+---
+
 # Task 1 — Create HA Networking (VPC + 4 Subnets + IGW + NAT + Route Tables)
 
 ## Goal
 
 Build a VPC (10.0.0.0/16) with two public and two private subnets across two Availability Zones, an Internet Gateway, a NAT Gateway, and the matching public/private route tables.
+
+![alt text](screenshots/week06-assnmnt-05-01.png)
+
+<br>
 
 ### Evidence
 
