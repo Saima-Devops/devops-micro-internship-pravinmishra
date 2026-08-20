@@ -149,13 +149,17 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 11 — Launch Template details showing that user data exists, including a visible snippet
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-13.png)
+
+![alt text](screenshots/week06-assnmnt-05-14.png)
 
 ---
 
 #### Screenshot 12 — A running instance created from the template showing that the application responds on port 80 through a local test or browser using its public IP
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-16.png)
+
+![alt text](screenshots/week06-assnmnt-05-15.png)
 
 ---
 
@@ -169,13 +173,17 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-17.png)
+
+![alt text](screenshots/week06-assnmnt-05-18.png)
 
 ---
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-19.png)
+
+![alt text](screenshots/week06-assnmnt-05-20.png)
 
 ---
 
@@ -189,13 +197,14 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-19.png)
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+
+![alt text](screenshots/week06-assnmnt-05-21.png)
 
 ---
 
@@ -209,13 +218,15 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-22.png)
+
+![alt text](screenshots/week06-assnmnt-05-23.png)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-24.png)
 
 ---
 
@@ -231,25 +242,26 @@ Test B: simulate an Availability Zone impact (stop, detach, or reduce desired ca
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
-Add your screenshot here.
+
+![alt text](screenshots/week06-assnmnt-05-25.png)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-20.png)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-21.png)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-26.png)
 
 ---
 
@@ -263,27 +275,87 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
-Add your screenshot here.
+```
+                         ┌─────────────────────┐
+                         │      INTERNET       │
+                         └──────────┬──────────┘
+                                    │
+                                    │ HTTP :80
+                                    ▼
+                    ┌───────────────────────────┐
+                    │   APPLICATION LOAD        │
+                    │       BALANCER            │
+                    │       ha-alb              │
+                    └─────────────┬─────────────┘
+                                  │
+                     ┌────────────┴────────────┐
+                     │                         │
+                     ▼                         ▼
+          ┌────────────────────┐    ┌────────────────────┐
+          │    PUBLIC SUBNET   │    │    PUBLIC SUBNET   │
+          │      AZ-a          │    │      AZ-b          │
+          │   10.0.1.0/24      │    │   10.0.2.0/24      │
+          │                    │    │                    │
+          │  ┌──────────────┐  │    │  ┌──────────────┐  │
+          │  │ EC2 / Nginx  │  │    │  │ EC2 / Nginx  │  │
+          │  │   Node.js    │  │    │  │   Node.js    │  │
+          │  └──────┬───────┘  │    │  └────── ┬──────┘  │
+          └─────────┼──────────┘    └───────── ┼─────────┘
+                    │                          │
+                    │        MySQL :3306       │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │       RDS MySQL          │
+                    │        Multi-AZ          │
+                    │                          │
+                    │   PRIVATE SUBNET AZ-a    │
+                    │   10.0.11.0/24           │
+                    │          +               │
+                    │   PRIVATE SUBNET AZ-b    │
+                    │   10.0.12.0/24           │
+                    └──────────────────────────┘
+
+
+          ┌─────────────────────────────────────────┐
+          │              VPC 10.0.0.0/16            │
+          │                                         │
+          │  Internet Gateway → Public Subnets      │
+          │  NAT Gateway → Private Subnets          │
+          └─────────────────────────────────────────┘
+```
 
 ---
 
 ### Notes
 
-Summarize the VPC and subnets across the two Availability Zones.
+1. Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+A highly available VPC with CIDR 10.0.0.0/16 was created across two Availability Zones. Two public subnets, 10.0.1.0/24 and 10.0.2.0/24, host the Application Load Balancer and web-tier EC2 instances. Two private subnets, 10.0.11.0/24 and 10.0.12.0/24, are used for the database tier. An Internet Gateway provides Internet access to the public subnets, while a NAT Gateway provides outbound connectivity for the private subnets.
 
-Summarize the ALB and Auto Scaling Group setup.
+---
 
-Write your answer here.
+2. Summarize the ALB and Auto Scaling Group setup.
 
-Summarize the private Multi-AZ RDS setup.
+An internet-facing Application Load Balancer was deployed across both public subnets to provide a single stable endpoint for the application. The ALB listens on HTTP port 80 and forwards requests to the web-tier target group. An Auto Scaling Group was configured with a desired capacity of 2, minimum of 2, and maximum of 4 instances across both Availability Zones. The instances use a common Launch Template and are automatically registered with the ALB target group.
 
-Write your answer here.
 
-Summarize the results of both high-availability tests.
+---
 
-Write your answer here.
+3. Summarize the private Multi-AZ RDS setup.
+
+A private Amazon RDS MySQL database was deployed using a DB Subnet Group containing both private subnets. Multi-AZ was enabled to provide database high availability and automatic failover. Public access was disabled, and the database Security Group allows MySQL traffic on port 3306 only from the web-tier Security Group. The application successfully performed database read and write operations through the private RDS endpoint.
+
+
+---
+
+4. Summarize the results of both high-availability tests.
+
+**Test A** — Instance Failure: One web-tier EC2 instance was terminated. The Auto Scaling Group automatically detected the failure and launched a replacement instance. The ALB continued serving the application, and the target group returned to a healthy state after the replacement became ready.
+
+**Test B** — Availability Zone Impact: One web-tier instance in an Availability Zone was stopped to simulate an availability-zone-level impact. The remaining instance in the other Availability Zone continued serving requests through the ALB, and the application remained accessible through the ALB DNS endpoint. These tests demonstrated that the web tier remained available despite an individual instance failure.
+
 
 ---
 
@@ -297,15 +369,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+https://www.linkedin.com/posts/saima-usman_aws-devops-cloudcomputing-share-7496182990708994048-Ct5T/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/week06-assnmnt-05-27.png)
 
 ---
 
@@ -318,17 +388,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
-- [ ] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
-- [ ] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
-- [ ] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
-- [ ] Task 5: ALB created across both public subnets (Screenshots 13–14)
-- [ ] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
-- [ ] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
-- [ ] Task 8: Both high-availability tests completed (Screenshots 19–22)
-- [ ] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [✔️] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
+- [✔️] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
+- [✔️] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
+- [✔️] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
+- [✔️] Task 5: ALB created across both public subnets (Screenshots 13–14)
+- [✔️] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
+- [✔️] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
+- [✔️] Task 8: Both high-availability tests completed (Screenshots 19–22)
+- [✔️] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
+- [✔️] LinkedIn post published and URL submitted
+- [✔️] No sensitive data exposed
 
 ---
 
