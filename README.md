@@ -72,7 +72,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile  [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile <br> [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud 
 
 
 <!-- Week 07 → Azure Cloud -->
@@ -126,7 +126,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 05 | Git & GitHub | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-git-githooks-share-7487585723110486016-3vQQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/from-git-init-to-ai-assisted-git-safety-my-journey-learning-git-github-in-the-devops-micro-9961149f79ed?sharedUserId=saimausman.dxb |
 | 06 | DevOps Lifecycle & Agile | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_mcp-modelcontextprotocol-agenticai-share-7493224575980339200-rf0j/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/building-an-ai-assisted-sprint-health-report-with-jira-mcp-and-claude-code-51af752ceb4c?sharedUserId=saimausman.dxb |
 | 07 | AWS Cloud | ✅ Started | ✅ Completed | https://lnkd.in/p/d68Rp-HD | — |
-| 08 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Azure Cloud | ✅ Started | ⏳ Pending | — | — |
 | 09 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
