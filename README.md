@@ -4,7 +4,7 @@
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-![Weeks](https://img.shields.io/badge/Weeks_Completed-7%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-8%2F15-green?style=for-the-badge)
 
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
@@ -72,11 +72,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile <br> [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud 
-
-
-<!-- Week 07 → Azure Cloud -->
-<!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile <br> [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud  [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)  Week 07 → Azure Cloud
 
 <!-- Week 08 → Terraform -->
 <!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
@@ -136,7 +132,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 
 **Status:** ✅ Completed Week-00 till Week-07<br>
-**Assignment:** ✅ Solved (till week-06)
+**Assignment:** ✅ Solved (till week-07)
 
 ---
 
