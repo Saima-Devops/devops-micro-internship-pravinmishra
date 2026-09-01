@@ -1,2 +1,88 @@
 .DS_Store
 
+# ==========================================
+# Terraform
+# ==========================================
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform plan files
+*.tfplan
+*.plan
+
+# Terraform variable files
+# These may contain passwords/secrets
+*.tfvars
+*.tfvars.json
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+
+# ==========================================
+# Secrets / Credentials
+# ==========================================
+
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+secrets.json
+
+
+# ==========================================
+# macOS
+# ==========================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS temporary files
+._*
+
+
+# ==========================================
+# VS Code
+# ==========================================
+
+.vscode/
+*.code-workspace
+
+
+# ==========================================
+# IDE / Editor files
+# ==========================================
+
+.idea/
+*.swp
+*.swo
+*~
+
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log
