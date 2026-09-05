@@ -121,8 +121,9 @@ This is not a course. It is an internship-style program — real deployments, re
 | 06 | DevOps Lifecycle & Agile | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_mcp-modelcontextprotocol-agenticai-share-7493224575980339200-rf0j/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/building-an-ai-assisted-sprint-health-report-with-jira-mcp-and-claude-code-51af752ceb4c?sharedUserId=saimausman.dxb |
 | 07 | AWS Cloud | ✅ Started | ✅ Completed | https://lnkd.in/p/d68Rp-HD | https://medium.com/@saimausman.dxb/designing-and-deploying-a-highly-available-3-tier-architecture-on-aws-a-practical-guide-b5e6c2c8f402?sharedUserId=saimausman.dxb |
 | 08 | Azure Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_microsoftazure-azure-cloudcomputing-activity-7500100269976825857-1Vzf?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
-| 09 | Terraform | ✅ Started | ⏳ Pending | — | — |
-| 10 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Terraform | ✅ Started | ✅ Completed  | https://www.linkedin.com/posts/saima-usman_devops-terraform-aws-activity-7502085996671594496-M-lD?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g
+ | — |
+| 10 | Ansible | ✅ Started  | ⏳ Pending | — | — |
 | 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
