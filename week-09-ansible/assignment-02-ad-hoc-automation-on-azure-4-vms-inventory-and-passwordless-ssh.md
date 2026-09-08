@@ -6,33 +6,33 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Purpose
 
-In this assignment, you will provision four Azure Linux VMs with Terraform, configure passwordless SSH, build a custom Ansible inventory with web/app/db groups, and run ad-hoc commands across individual hosts and groups.
+In this assignment, you will provision three/four Azure Linux VMs with Terraform, configure passwordless SSH, build a custom Ansible inventory with web/app/db groups, and run ad-hoc commands across individual hosts and groups.
 
 ---
 
-# Task 1 — Provision 4 Azure VMs (Terraform)
+# Task 1 — Provision 2 AWS VMs (Terraform)
 
 ## Goal
 
-Provision four Ubuntu 22.04 VMs (`web1`, `web2`, `app1`, `db1`, Standard_B1s) with SSH key authentication and public IPs, in a VNet with an NSG allowing SSH (22) and HTTP (80), and output all four public IPs.
+Provision three Ubuntu 22.04 VMs (`web1`, `app1`, Standard_B1s/Standard_D2als_v7) with SSH key authentication and public IPs, in a VNet with an NSG allowing SSH (22) and HTTP (80), and output all three public IPs.
 
 ### Evidence
 
 #### Screenshot 1 — Terminal showing successful `terraform apply` output and `terraform output public_ips`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-1.png)
 
 ---
 
 #### Screenshot 2 — Azure Portal showing all four running Ubuntu VMs
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-2.png)
 
 ---
 
 #### Screenshot 3 — Network Security Group inbound rules showing SSH 22 and HTTP 80
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-3.png)
 
 ---
 
@@ -46,7 +46,7 @@ Connect to each of the four VMs as `azureuser` and run `hostname` remotely witho
 
 #### Screenshot 4 — Terminal showing successful `hostname` output from all four passwordless SSH tests
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-4.png)
 
 ---
 
@@ -60,7 +60,7 @@ Create `inventory.ini` mapping VM indices 0–1 to `[web]`, index 2 to `[app]`, 
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` with the web, app, db, and all:vars sections
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-5.png)
 
 ---
 
@@ -74,33 +74,43 @@ Run `ping`, `whoami`, and `uptime` against all hosts; install and start Nginx on
 
 #### Screenshot 6 — Terminal showing `ansible ping` SUCCESS for all four hosts
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-6.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing `uptime` output for all four hosts
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-7.png)
 
 ---
 
 #### Screenshot 8 — Terminal showing Nginx installation and service start on the web group
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-8.png)
+
+![alt text](screenshots/w-09-assnmnt-02-Sc-9.png)
+
+![alt text](screenshots/w-09-assnmnt-02-Sc-10.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing `htop` installation on all hosts and group-targeted command output
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-02-Sc-11.png)
 
 ---
 
 ### Notes
 
-Describe an issue you faced and how you fixed it, what you learned, when you'd use an ad-hoc command instead of a playbook, and one challenge you faced during SSH or inventory setup.
+**Describe an issue you faced and how you fixed it, what you learned, when you'd use an ad-hoc command instead of a playbook, and one challenge you faced during SSH or inventory setup.**
 
-Write your answer here.
+One issue I faced was `Azure VM size` and `regional capacity restrictions`, which prevented the required VMs from being deployed reliably. I resolved this by migrating the lab to `AWS EC2` and recreating the infrastructure with Terraform in the `us-east-1` region.
+
+I learned how Terraform can be used to provision the complete infrastructure and how Ansible can manage multiple Linux hosts through an inventory. I also learned the importance of checking cloud-provider availability and capacity instead of assuming that a VM size will always be deployable.
+
+I would use an a`d-hoc` Ansible command for quick, one-time tasks such as checking uptime, testing connectivity, installing a package, or verifying a service. For repeatable configuration and multi-step deployments, I would use an `Ansible playbook` because it is easier to maintain, document, and reuse.
+
+One challenge during `SSH setup` was ensuring that Ansible used the correct `Ed25519 private key` and the correct `ubuntu` user. Direct SSH testing confirmed `passwordless authentication` before configuring the Ansible inventory, which helped isolate SSH issues from inventory issues.
 
 ---
 
@@ -114,12 +124,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Four Azure VMs provisioned with Terraform (Screenshots 1–3)
-- [ ] Task 2: Passwordless SSH verified on all four VMs (Screenshot 4)
-- [ ] Task 3: `inventory.ini` created with web/app/db groups (Screenshot 5)
-- [ ] Task 4: Ad-hoc ping, uptime, Nginx, and htop commands run successfully (Screenshots 6–9)
-- [ ] Reflection notes written (Notes)
-- [ ] No private key material exposed
+- [✅] Task 1: Four Azure VMs provisioned with Terraform (Screenshots 1–3)
+- [✅] Task 2: Passwordless SSH verified on all four VMs (Screenshot 4)
+- [✅] Task 3: `inventory.ini` created with web/app/db groups (Screenshot 5)
+- [✅] Task 4: Ad-hoc ping, uptime, Nginx, and htop commands run successfully (Screenshots 6–9)
+- [✅] Reflection notes written (Notes)
+- [✅] No private key material exposed
 
 ---
 
