@@ -99,7 +99,7 @@ Confirm the deployed static website is reachable directly from a web-server publ
 
 ---
 
-After the change in code, both servers updated simultaaneously, I just ran the command again:
+After the change in code, both servers updated simultaneously, I just ran the following command again:
 
 ```
 ansible-playbook -i inventory.ini site.yml
