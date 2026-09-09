@@ -98,6 +98,14 @@ Run `ping`, `whoami`, and `uptime` against all hosts; install and start Nginx on
 
 ![alt text](screenshots/w-09-assnmnt-02-Sc-11.png)
 
+#### Screenshot 10 — All resources destroyed ater the assignment
+
+```
+terraform destroy
+```
+
+![alt text](screenshots/w-09-assnmnt-02-Sc-12.png)
+
 ---
 
 ### Notes

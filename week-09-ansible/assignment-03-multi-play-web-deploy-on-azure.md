@@ -20,7 +20,8 @@ Create the `static-web` project directory with `inventory.ini`, `site.yml`, a `f
 
 #### Screenshot 1 — Terminal or editor showing the complete `static-web` folder layout
 
-Add your screenshot here.
+
+![alt text](screenshots/w-09-assnmnt-03-Sc-1.png)
 
 ---
 
@@ -34,7 +35,7 @@ Stage `index.html` from `https://github.com/pravinmishraaws/Azure-Static-Website
 
 #### Screenshot 2 — Editor or terminal showing `files/index.html` staged inside the `static-web` project
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-03-Sc-2.png)
 
 ---
 
@@ -48,13 +49,13 @@ Write `site.yml` with three plays: Play 1 (install/start Nginx on `web`), Play 2
 
 #### Screenshot 3 — Editor showing the three plays in `site.yml`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-03-Sc-3.png)
 
 ---
 
 #### Screenshot 4 — Editor showing the copy task, file ownership/mode, handler, uri task, and HTTP 200 assertion
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-03-Sc-4.png)
 
 ---
 
@@ -68,13 +69,15 @@ Run `ansible-playbook -i inventory.ini site.yml` and confirm all plays complete 
 
 #### Screenshot 5 — Terminal showing the `ansible-playbook` run and final recap with OK/changed results and no failures
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-03-Sc-5.png)
+
+![alt text](screenshots/w-09-assnmnt-03-Sc-6.png)
 
 ---
 
 #### Screenshot 6 — Terminal showing the successful localhost URI verification results
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-03-Sc-7.png)
 
 ---
 
@@ -88,15 +91,51 @@ Confirm the deployed static website is reachable directly from a web-server publ
 
 #### Screenshot 7 — Browser showing the static website loaded from a web-server public IP
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-03-Sc-8.png)
+
+![alt text](screenshots/w-09-assnmnt-03-Sc-9.png)
+
+![alt text](screenshots/w-09-assnmnt-03-Sc-10.png)
 
 ---
+
+After the change in code, both servers updated simultaaneously, I just ran the command again:
+
+```
+ansible-playbook -i inventory.ini site.yml
+```
+
+### PROOF
+
+**[Web1 Server]**
+
+![alt text](screenshots/w-09-assnmnt-03-Sc-11.png)
+
+**[Web2 Server]**
+
+![alt text](screenshots/w-09-assnmnt-03-Sc-12.png)
+
+----
 
 ### Notes
 
 Describe an issue you faced and how you fixed it, what you learned, why installation and deployment were split into separate plays, and one benefit of using `copy` instead of cloning from Git directly.
 
-Write your answer here.
+#### Issue faced: 
+
+I initially faced issues with `SSH` connectivity and inventory configuration while setting up the Azure servers. I also had to search through different Azure regions to find a suitable region with the required VM size and available quota. I fixed these issues by verifying the public IP addresses, SSH key path, username, and ensuring that the required ports were allowed in the Azure Network Security Group. I also selected a region where the required VM quota was available.
+
+#### What I learned: 
+
+I learned how `Terraform` can be used to create the Azure infrastructure and `Ansible` can then manage and configure the servers without manually logging into each VM.
+
+#### Why installation and deployment were split into separate plays: 
+
+They were separated to keep the `playbook` organized and follow a clear sequence. The first play installs and configures `Nginx`, while the second play deploys the website files. This makes the playbook easier to understand, maintain, and troubleshoot.
+
+#### Benefit of using copy instead of cloning from Git directly: 
+
+Using copy keeps the website source under Ansible's control and allows me to deploy the exact local version of `index.html` to all servers consistently. It also avoids requiring Git to be installed or accessing the Git repository directly from the managed servers.
 
 ---
 
@@ -110,13 +149,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: `static-web` project structure created (Screenshot 1)
-- [ ] Task 2: `index.html` staged under `files/` (Screenshot 2)
-- [ ] Task 3: Three-play `site.yml` written (Screenshots 3–4)
-- [ ] Task 4: Playbook run successfully with no failures (Screenshots 5–6)
-- [ ] Task 5: Site verified manually via browser (Screenshot 7)
-- [ ] Reflection notes written (Notes)
-- [ ] No sensitive data exposed
+- [✅] Task 1: `static-web` project structure created (Screenshot 1)
+- [✅] Task 2: `index.html` staged under `files/` (Screenshot 2)
+- [✅] Task 3: Three-play `site.yml` written (Screenshots 3–4)
+- [✅] Task 4: Playbook run successfully with no failures (Screenshots 5–6)
+- [✅] Task 5: Site verified manually via browser (Screenshot 7)
+- [✅] Reflection notes written (Notes)
+- [✅] No sensitive data exposed
 
 ---
 
