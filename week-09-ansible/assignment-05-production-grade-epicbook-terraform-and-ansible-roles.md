@@ -20,7 +20,7 @@ Create the `epicbook-prod` project with `terraform/azure` or `terraform/aws`, `a
 
 #### Screenshot 1 — Terminal or editor showing the complete `epicbook-prod` project tree
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-1.png)
 
 ---
 
@@ -30,17 +30,59 @@ Add your screenshot here.
 
 Provision one secure Ubuntu 22.04 VM with SSH key authentication, inbound SSH (22) and HTTP (80), and `public_ip`/`admin_user` outputs, on your chosen cloud.
 
+I will choose AWS. Our Terraform will create:
+
+```
+AWS
+│
+├── VPC
+│   ├── Public subnet
+│   │   └── EC2 Ubuntu 22.04
+│   │
+│   └── Private subnets
+│       └── RDS MySQL
+│
+├── Internet Gateway
+│
+├── Route tables
+│
+├── EC2 Security Group
+│   ├── SSH 22 → YOUR_PUBLIC_IP/32
+│   └── HTTP 80 → 0.0.0.0/0
+│
+├── RDS Security Group
+│   └── MySQL 3306 → EC2 Security Group
+│
+├── EC2 key pair
+│
+└── RDS MySQL
+```
+
 ### Evidence
 
 #### Screenshot 2 — Terminal showing successful `terraform apply` and `terraform output` with `public_ip` and `admin_user`
 
-Add your screenshot here.
+### Terraform has created:
 
+🌐 Custom VPC \
+🌐 Internet Gateway \
+📡 Public subnet \
+🔒 Two private subnets for RDS \
+🛣️ Public route table \
+🔐 EC2 security group \
+🔐 RDS security group \
+🔑 EC2 SSH key pair \
+💻 Ubuntu EC2 instance \
+🗄️ MySQL RDS database
+
+<br>
+
+![alt text](screenshots/w-09-assnmnt-05-Sc-2.png)
 ---
 
 #### Screenshot 3 — Terraform code or cloud console showing inbound rules for ports 22 and 80
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-3.png)
 
 ---
 
@@ -54,13 +96,13 @@ Create the `[web]` inventory using the Terraform `public_ip` and `admin_user` ou
 
 #### Screenshot 4 — Terminal showing the successful passwordless SSH hostname check
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-4.png)
 
 ---
 
 #### Screenshot 5 — Editor or terminal showing `inventory.ini` and a successful Ansible ping
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-5.png)
 
 ---
 
@@ -74,7 +116,7 @@ Create `site.yml` invoking the `common`, `nginx`, and `epicbook` roles in that e
 
 #### Screenshot 6 — Editor showing `ansible/site.yml` with the three roles in the required order
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-6.png)
 
 ---
 
@@ -88,7 +130,7 @@ Create `roles/common/tasks/main.yml` to update apt, upgrade packages, install ba
 
 #### Screenshot 7 — Editor showing `roles/common/tasks/main.yml`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-7.png)
 
 ---
 
@@ -102,13 +144,13 @@ Create the `nginx` role to install Nginx, deploy the `epicbook.conf.j2` template
 
 #### Screenshot 8 — Editor showing the Nginx role tasks, handler, and `epicbook.conf.j2` template
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-8.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing `/etc/nginx/sites-available/epicbook` and a successful Nginx configuration test
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-10.png)
 
 ---
 
@@ -122,7 +164,7 @@ Create the `epicbook` role to clone the repository to `{{ app_dest }}`, set owne
 
 #### Screenshot 10 — Editor showing `roles/epicbook/tasks/main.yml`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-15.png)
 
 ---
 
@@ -136,7 +178,7 @@ Define `app_repo`, `app_dest`, `app_user`, and `app_group` in `ansible/group_var
 
 #### Screenshot 11 — Editor showing `ansible/group_vars/web.yml`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-16.png)
 
 ---
 
@@ -150,7 +192,7 @@ Run `ansible-playbook -i inventory.ini site.yml` and confirm `common` → `nginx
 
 #### Screenshot 12 — Terminal showing the role-based Ansible run and final recap with `failed=0`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-9.png)
 
 ---
 
@@ -164,27 +206,38 @@ Confirm the EpicBook site loads with HTTP 200, inspect the Nginx configuration, 
 
 #### Screenshot 13 — Browser showing the EpicBook site with the public IP visible
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-11.png)
+
+![alt text](screenshots/w-09-assnmnt-05-Sc-13.png)
 
 ---
 
 #### Screenshot 14 — Terminal showing HTTP 200 and the Nginx site-file snippet
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-12.png)
 
 ---
 
 #### Screenshot 15 — Terminal showing the idempotent second Ansible run with mostly OK/UNCHANGED and `failed=0`
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-14.png)
 
 ---
 
 ### Notes
 
-Describe an issue you faced and how you fixed it, what you learned, any security issues you identified, and your production remediation plan.
+**Describe an issue you faced and how you fixed it, what you learned, any security issues you identified, and your production remediation plan.**
 
-Write your answer here.
+
+During the deployment, I faced several issues that helped me better understand the interaction between Terraform and Ansible. Initially, the Terraform `AMI filter returned no results` because the Ubuntu AMI naming pattern was incorrect. I resolved this by checking the available AWS AMIs and updating the filter to match the actual Ubuntu 22.04 image. I also encountered an issue with the database name because the application and SQL files consistently used `bookstore`, while Terraform was initially configured with `epicbook`. I changed the RDS database name to `bookstore` so the infrastructure matched the application.
+
+Another issue occurred when the Ansible database task received empty values for the RDS host, username, and database name. This caused MySQL to fall back to the local socket. I fixed this by configuring the non-sensitive database values directly in Ansible variables and keeping the password in an environment variable. I also encountered the default Nginx welcome page instead of EpicBook; removing the default site, enabling the EpicBook configuration, and reloading Nginx fixed the issue. Finally, I corrected an obsolete PM2 handler reference and made the deployment tasks idempotent so the second Ansible run completed with `failed=0` and minimal changes.
+
+I learned that Terraform is responsible for creating consistent infrastructure, while Ansible should configure and deploy the application in a repeatable and idempotent way. Testing each layer separately—SSH, RDS connectivity, Node.js, PM2, Nginx, and finally the browser—made troubleshooting much easier.
+
+From a security perspective, SSH was restricted to my controller's /32 address, RDS was made private, and port 3306 was allowed only from the EC2 security group. However, I identified some areas that would need improvement for production. During troubleshooting, the database password was temporarily exposed in a command/output, and MySQL warned about passwords supplied on the command line. The password was also stored in Terraform state because RDS credentials are managed through Terraform.
+
+For production, I would store database credentials in `AWS Secrets Manager` or another secure secret-management solution, use `Ansible Vault` where appropriate, rotate the exposed database password, avoid passing passwords through command-line arguments, enable HTTPS with a valid `TLS certificate`, restrict administrative access further, `enable stronger RDS backups` and `deletion protection`, and `review logging`, `monitoring`, `IAM permissions`, and `network controls`.
 
 ---
 
@@ -200,19 +253,21 @@ Publish a LinkedIn post describing the Terraform + Ansible roles deployment (clo
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/dR-Q7ubc
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
-
+![alt text](screenshots/w-09-assnmnt-05-Sc-19.png)
 ---
 
 #### Video reflection screenshot
 
-Add your screenshot here.
+![alt text](screenshots/w-09-assnmnt-05-Sc-17.png)
+
+![alt text](screenshots/w-09-assnmnt-05-Sc-18.png)
+
 
 ---
 
@@ -225,19 +280,19 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: `epicbook-prod` project and role structure created (Screenshot 1)
-- [ ] Task 2: Cloud VM provisioned with Terraform (Screenshots 2–3)
-- [ ] Task 3: Passwordless SSH and Ansible ping verified (Screenshots 4–5)
-- [ ] Task 4: `site.yml` orchestrates roles in common → nginx → epicbook order (Screenshot 6)
-- [ ] Task 5: `common` role created (Screenshot 7)
-- [ ] Task 6: `nginx` role, template, and handler created (Screenshots 8–9)
-- [ ] Task 7: `epicbook` role created (Screenshot 10)
-- [ ] Task 8: Group variables defined (Screenshot 11)
-- [ ] Task 9: Playbook run successfully with `failed=0` (Screenshot 12)
-- [ ] Task 10: Site verified and idempotent rerun confirmed (Screenshots 13–15)
-- [ ] Reflection and security remediation notes written (Notes)
-- [ ] LinkedIn post and video reflection submitted
-- [ ] No sensitive data exposed
+- [✅] Task 1: `epicbook-prod` project and role structure created (Screenshot 1)
+- [✅] Task 2: Cloud VM provisioned with Terraform (Screenshots 2–3)
+- [✅] Task 3: Passwordless SSH and Ansible ping verified (Screenshots 4–5)
+- [✅] Task 4: `site.yml` orchestrates roles in common → nginx → epicbook order (Screenshot 6)
+- [✅] Task 5: `common` role created (Screenshot 7)
+- [✅] Task 6: `nginx` role, template, and handler created (Screenshots 8–9)
+- [✅] Task 7: `epicbook` role created (Screenshot 10)
+- [✅] Task 8: Group variables defined (Screenshot 11)
+- [✅] Task 9: Playbook run successfully with `failed=0` (Screenshot 12)
+- [✅] Task 10: Site verified and idempotent rerun confirmed (Screenshots 13–15)
+- [✅] Reflection and security remediation notes written (Notes)
+- [✅] LinkedIn post and video reflection submitted
+- [✅] No sensitive data exposed
 
 ---
 

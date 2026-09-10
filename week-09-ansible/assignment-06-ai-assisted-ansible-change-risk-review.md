@@ -166,16 +166,16 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Inventory connectivity confirmed (Screenshot 1)
-- [ ] Task 2: `CLAUDE.md` created with workflow and safety rules (Screenshot 2)
-- [ ] Task 3: Four-category risk-classification plan produced before scripting (Screenshot 3)
-- [ ] Task 4: `ansible-check-review.sh` built and passes `bash -n` (Screenshots 4–5)
-- [ ] Task 5: Dry-run review run against the current playbook (Screenshot 6)
-- [ ] Task 6: `/ansible-risk-review` skill created and run (Screenshots 7–8)
-- [ ] Task 7: Risky change introduced and correctly flagged (Screenshots 9–10)
-- [ ] Task 8: Change applied by the human, verified, and summarized (Screenshots 11–12)
-- [ ] Reflection written (Notes)
-- [ ] No sensitive data exposed
+- [✅] Task 1: Inventory connectivity confirmed (Screenshot 1)
+- [✅] Task 2: `CLAUDE.md` created with workflow and safety rules (Screenshot 2)
+- [✅] Task 3: Four-category risk-classification plan produced before scripting (Screenshot 3)
+- [✅] Task 4: `ansible-check-review.sh` built and passes `bash -n` (Screenshots 4–5)
+- [✅] Task 5: Dry-run review run against the current playbook (Screenshot 6)
+- [✅] Task 6: `/ansible-risk-review` skill created and run (Screenshots 7–8)
+- [✅] Task 7: Risky change introduced and correctly flagged (Screenshots 9–10)
+- [✅] Task 8: Change applied by the human, verified, and summarized (Screenshots 11–12)
+- [✅] Reflection written (Notes)
+- [✅] No sensitive data exposed
 
 ---
 
