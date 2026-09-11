@@ -123,7 +123,7 @@ https://dmi.pravinmishra.com/s/Saima-Devops.html
 | 07 | AWS Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-aws-cloudcomputing-ugcPost-7497242543248756736-uwdO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/designing-and-deploying-a-highly-available-3-tier-architecture-on-aws-a-practical-guide-b5e6c2c8f402?sharedUserId=saimausman.dxb |
 | 08 | Azure Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_microsoftazure-azure-cloudcomputing-activity-7500100269976825857-1Vzf?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
 | 09 | Terraform | ✅ Started | ✅ Completed  | https://www.linkedin.com/posts/saima-usman_devops-terraform-aws-activity-7502085996671594496-M-lD?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/when-devops-meets-agentic-ai-the-day-terraform-stopped-being-just-infrastructure-code-5fcebb3b8e24 |
-| 10 | Ansible | ✅ Started  | ✅ Completed | — | — |
+| 10 | Ansible | ✅ Started  | ✅ Completed | https://lnkd.in/p/dGqvxzcq | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
 | 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
