@@ -113,25 +113,25 @@ https://dmi.pravinmishra.com/s/Saima-Devops.html
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/saima-usman_100daysofdevops-devopsjourney-networkingbasics-share-7456014082832220160-8qHg/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/decoding-the-web-a-professionals-guide-to-how-the-internet-actually-works-ad0bb8ef95a1?sharedUserId=saimausman.dxb |
-| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/saima-usman_building-focus-and-discipline-journey-ugcPost-7477656854412722177-J5j4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/-524aa023a71e?sharedUserId=saimausman.dxb |
-| 02 | Agentic AI with Claude Code | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-agenticai-claudecode-ugcPost-7480734982999625728-v5g5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/an-exciting-journey-into-the-world-of-agentic-ai-and-claude-code-43940d55c2f1 |
-| 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_aws-ec2-reactjs-share-7483482307090190337--FeG/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://www.linkedin.com/pulse/my-devops-learning-journey-starting-linux-saima-usman-1elpf |
-| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-linux-bash-share-7483973193347534848-Kv5e/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/ai-assisted-linux-incident-triage-with-bash-and-claude-code-building-an-agentic-devops-workflow-8a40ff5706b2?sharedUserId=saimausman.dxb |
-| 05 | Git & GitHub | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-git-githooks-share-7487585723110486016-3vQQ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/from-git-init-to-ai-assisted-git-safety-my-journey-learning-git-github-in-the-devops-micro-9961149f79ed?sharedUserId=saimausman.dxb |
-| 06 | DevOps Lifecycle & Agile | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_mcp-modelcontextprotocol-agenticai-share-7493224575980339200-rf0j/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/building-an-ai-assisted-sprint-health-report-with-jira-mcp-and-claude-code-51af752ceb4c?sharedUserId=saimausman.dxb |
-| 07 | AWS Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-aws-cloudcomputing-ugcPost-7497242543248756736-uwdO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/designing-and-deploying-a-highly-available-3-tier-architecture-on-aws-a-practical-guide-b5e6c2c8f402?sharedUserId=saimausman.dxb |
-| 08 | Azure Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_microsoftazure-azure-cloudcomputing-activity-7500100269976825857-1Vzf?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
-| 09 | Terraform | ✅ Started | ✅ Completed  | https://www.linkedin.com/posts/saima-usman_devops-terraform-aws-activity-7502085996671594496-M-lD?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g | https://medium.com/@saimausman.dxb/when-devops-meets-agentic-ai-the-day-terraform-stopped-being-just-infrastructure-code-5fcebb3b8e24 |
-| 10 | Ansible | ✅ Started  | ✅ Completed | https://lnkd.in/p/dGqvxzcq | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/saima-usman_100daysofdevops-devopsjourney-networkingbasics-share-7456014082832220160-8qHg | https://medium.com/@saimausman.dxb/decoding-the-web-a-professionals-guide-to-how-the-internet-actually-works-ad0bb8ef95a1 |
+| 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/saima-usman_building-focus-and-discipline-journey-ugcPost-7477656854412722177-J5j4 | https://medium.com/@saimausman.dxb/-524aa023a71e |
+| 02 | Agentic AI with Claude Code | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-agenticai-claudecode-ugcPost-7480734982999625728-v5g5 | https://medium.com/@saimausman.dxb/an-exciting-journey-into-the-world-of-agentic-ai-and-claude-code-43940d55c2f1 |
+| 03 | Linux for DevOps | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-aws-ec2-share-7483482307090190337-5hkS | https://www.linkedin.com/pulse/my-devops-learning-journey-starting-linux-saima-usman-1elpf |
+| 04 | Bash Scripting | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-devops-linux-share-7483973193347534848-vPcO | https://medium.com/@saimausman.dxb/ai-assisted-linux-incident-triage-with-bash-and-claude-code-building-an-agentic-devops-workflow-8a40ff5706b2 |
+| 05 | Git & GitHub | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_devops-git-githooks-share-7487585723110486016-3vQQ | https://medium.com/@saimausman.dxb/from-git-init-to-ai-assisted-git-safety-my-journey-learning-git-github-in-the-devops-micro-9961149f79ed |
+| 06 | DevOps Lifecycle & Agile | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_mcp-modelcontextprotocol-agenticai-share-7493224575980339200-rf0j | https://medium.com/@saimausman.dxb/building-an-ai-assisted-sprint-health-report-with-jira-mcp-and-claude-code-51af752ceb4c |
+| 07 | AWS Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-aws-cloudcomputing-ugcPost-7497242543248756736-uwdO | https://medium.com/@saimausman.dxb/designing-and-deploying-a-highly-available-3-tier-architecture-on-aws-a-practical-guide-b5e6c2c8f402 |
+| 08 | Azure Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_microsoftazure-azure-cloudcomputing-activity-7500100269976825857-1Vzf | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
+| 09 | Terraform | ✅ Started | ✅ Completed  | https://www.linkedin.com/posts/saima-usman_devops-terraform-aws-activity-7502085996671594496-M-lD | https://medium.com/@saimausman.dxb/when-devops-meets-agentic-ai-the-day-terraform-stopped-being-just-infrastructure-code-5fcebb3b8e24 |
+| 10 | Ansible | ✅ Started  | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-devops-terraform-ugcPost-7503559857472684032-_K9K | https://medium.com/@saimausman.dxb/from-hours-of-manual-configuration-to-minutes-of-automation-374090075d17 |
 | 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 
-**Status:** ✅ Completed Week-00 till Week-08<br>
-**Assignment:** ✅ Solved (till week-08)
+**Status:** ✅ Completed Week-00 till Week-10<br>
+**Assignment:** ✅ Solved (till week-09)
 
 ---
 
