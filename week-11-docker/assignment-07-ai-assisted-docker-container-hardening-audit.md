@@ -153,7 +153,7 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: EpicBook container confirmed running (Screenshot 1)
+- [✅] Task 1: EpicBook container confirmed running (Screenshot 1)
 - [ ] Task 2: `CLAUDE.md` created with hardening workflow and safety rules (Screenshot 2)
 - [ ] Task 3: Claude produced a read-only six-check audit plan (Screenshot 3)
 - [ ] Task 4: Audit script built and validated (Screenshots 4–5)

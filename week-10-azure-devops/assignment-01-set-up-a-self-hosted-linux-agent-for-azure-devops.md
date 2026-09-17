@@ -30,7 +30,9 @@ Create a self-hosted agent pool (e.g. `SelfHostedPool`) in Azure DevOps Organiza
 
 #### Screenshot 1 — Azure DevOps Agent Pools page showing the newly created pool
 
-Add your screenshot here.
+![alt text](<screenshots/Assign-1/Screenshot -1.png>)
+
+![alt text](screenshots/Assign-1/Screenshot-1b.png)
 
 ---
 
@@ -44,13 +46,13 @@ Create an Ubuntu 22.04 (or latest) VM in AWS or Azure with SSH access, and confi
 
 #### Screenshot 2 — Cloud console showing the running Ubuntu VM and its public IP or DNS name
 
-Add your screenshot here.
+![alt text](screenshots/Assign-1/Screenshot-2.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing a successful SSH login and Ubuntu version details
 
-Add your screenshot here.
+![alt text](screenshots/Assign-1/Screenshot-3.png)
 
 ---
 
@@ -64,13 +66,13 @@ Download the Linux agent package, register it with your organization/pool/PAT vi
 
 #### Screenshot 4 — Terminal showing successful agent configuration without exposing the PAT
 
-Add your screenshot here.
+![alt text](screenshots/Assign-1/Screenshot-4.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing the agent service running successfully
 
-Add your screenshot here.
+![alt text](screenshots/Assign-1/Screenshot-5.png)
 
 ---
 
@@ -84,7 +86,7 @@ Confirm the agent service is running and the agent shows as Online in the Azure 
 
 #### Screenshot 6 — Agent Pool listing showing the registered agent online
 
-Add your screenshot here.
+![alt text](screenshots/Assign-1/Screenshot-6.png)
 
 ---
 
@@ -98,7 +100,11 @@ Create and run a YAML pipeline targeting the self-hosted pool, running `uname -a
 
 #### Screenshot 7 — Successful test pipeline run output in Azure DevOps showing the Linux commands
 
-Add your screenshot here.
+![alt text](screenshots/Assign-1/Screenshot-7a.png)
+
+![alt text](screenshots/Assign-1/Screenshot-7b.png)
+
+![alt text](screenshots/Assign-1/Screenshot-7c.png)
 
 ---
 
@@ -106,7 +112,22 @@ Add your screenshot here.
 
 Note the cloud platform used, your Azure DevOps organization/project name, and the agent pool name. Describe any issue you faced and how you resolved it.
 
-Write your answer here.
+### Notes — Task 6
+
+**Cloud platform:** Microsoft Azure
+**Azure DevOps Organization:** DMI-Cohort3-Saima
+**Azure DevOps Project:** linux-agent-lab
+**Agent pool:** linux-agent-pool
+**Agent name:** linux-agent
+
+#### Issue faced: 
+Initially, after running ./run.sh on the Azure VM, the agent appeared to stop at Listening for Jobs. I initially thought the process was stuck.
+
+#### Resolution: 
+I verified the agent pool in Azure DevOps and found that linux-agent was Online and Idle. This confirmed that the agent was successfully connected and simply waiting for a pipeline job. I then created and ran a starter YAML pipeline targeting linux-agent-pool.
+
+#### Result: 
+The pipeline successfully executed uname -a, whoami, and df -h on the Azure VM using the self-hosted linux-agent. The pipeline completed successfully. ✅
 
 ---
 
@@ -119,14 +140,14 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: PAT created with required scopes and stored securely
-- [ ] Task 2: Self-hosted agent pool created (Screenshot 1)
-- [ ] Task 3: Ubuntu VM provisioned and SSH verified (Screenshots 2–3)
-- [ ] Task 4: Agent installed, registered, and running as a service (Screenshots 4–5)
-- [ ] Task 5: Agent verified Online (Screenshot 6)
-- [ ] Task 6: Test pipeline run successfully (Screenshot 7)
-- [ ] Platform/org/pool details and issue notes written (Notes)
-- [ ] No secrets exposed
+- [✅] Task 1: PAT created with required scopes and stored securely
+- [✅] Task 2: Self-hosted agent pool created (Screenshot 1)
+- [✅] Task 3: Ubuntu VM provisioned and SSH verified (Screenshots 2–3)
+- [✅] Task 4: Agent installed, registered, and running as a service (Screenshots 4–5)
+- [✅] Task 5: Agent verified Online (Screenshot 6)
+- [✅] Task 6: Test pipeline run successfully (Screenshot 7)
+- [✅] Platform/org/pool details and issue notes written (Notes)
+- [✅] No secrets exposed
 
 ---
 

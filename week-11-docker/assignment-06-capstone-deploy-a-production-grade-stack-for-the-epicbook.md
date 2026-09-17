@@ -224,7 +224,7 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 0: Architecture diagram and env/ports doc completed
+- [✅] Task 0: Architecture diagram and env/ports doc completed
 - [ ] Task 1: Multi-stage Dockerfiles and `.dockerignore` files created
 - [ ] Task 2: `docker-compose.yml` with isolated networks and volumes authored
 - [ ] Task 3: Healthchecks and `depends_on` conditions configured

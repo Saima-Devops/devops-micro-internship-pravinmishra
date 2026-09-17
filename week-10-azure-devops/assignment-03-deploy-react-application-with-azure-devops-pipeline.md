@@ -10,6 +10,47 @@ In this assignment, you will build and deploy the `my-react-app` React applicati
 
 ---
 
+## Overall Architecture
+
+```
+GitHub React App
+       │
+       │ Import
+       ▼
+Azure Repos
+       │
+       │ commit to main
+       ▼
+Azure DevOps Pipeline
+       │
+       ├── Build
+       │     npm install
+       │     npm run build
+       │
+       ├── Test
+       │     npm test -- --watchAll=false
+       │
+       ├── Publish
+       │     build/ → react_build artifact
+       │
+       └── Deploy
+             │
+             │ SSH
+             ▼
+       Ubuntu Azure VM
+             │
+             └── /var/www/html
+                    │
+                    ▼
+                  Nginx
+                    │
+                    ▼
+              React Application
+
+```
+
+----
+
 # Task 1 — Import the React App
 
 ## Goal
@@ -20,7 +61,7 @@ Import `https://github.com/pravinmishraaws/my-react-app` into Azure Repos and co
 
 #### Screenshot 1 — Azure Repos showing the imported React project with `package.json` and `src/` visible
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-1.png)
 
 ---
 
@@ -34,13 +75,19 @@ Provision a new Ubuntu VM with Terraform (ports 22/80 open) and prepare Nginx/`/
 
 #### Screenshot 2 — Terraform output or cloud console showing the new VM and public IP
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-2.png)
+
+![alt text](screenshots/Assign-3/Screenshot-3.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-4.png)
+
+![alt text](screenshots/Assign-3/Screenshot-5.png)
+
+![alt text](screenshots/Assign-3/Screenshot-6.png)
 
 ---
 
@@ -54,7 +101,10 @@ Point the `ubuntu-nginx-ssh` Service Connection to the new VM and validate it.
 
 #### Screenshot 4 — SSH Service Connection page showing the new VM connection and successful validation, with the password hidden
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-7.png)
+
+![alt text](screenshots/Assign-3/Screenshot-8.png)
+
 
 ---
 
@@ -68,7 +118,8 @@ Create the Build (npm install/build), Test (`npm test -- --watchAll=false`, bloc
 
 #### Screenshot 5 — Azure Pipeline YAML definition with the Build, Test, Publish, and Deploy sections visible
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-9.png)
+
 
 ---
 
@@ -82,19 +133,21 @@ Confirm a commit to `main` triggers the pipeline, all four stages succeed, the b
 
 #### Screenshot 6 — Pipeline run summary showing Build, Test, Publish, and Deploy succeeded
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-10.png)
+
+![alt text](screenshots/Assign-3/Screenshot-13.png)
 
 ---
 
 #### Screenshot 7 — Terminal or pipeline output showing `/var/www/html` after deployment
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-11.png)
 
 ---
 
 #### Screenshot 8 — Browser showing the running React application with the public IP visible
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-12.png)
 
 ---
 
@@ -110,13 +163,13 @@ Publish a LinkedIn post about the completed assignment, mentioning the Build/Tes
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/g7A_umzK
 
 ---
 
 #### Screenshot — Published LinkedIn post showing the text and at least one link or image
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-14.png)
 
 ---
 
@@ -129,13 +182,13 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: React app imported into Azure Repos (Screenshot 1)
-- [ ] Task 2: New VM provisioned and Nginx configured (Screenshots 2–3)
-- [ ] Task 3: SSH Service Connection updated and validated (Screenshot 4)
-- [ ] Task 4: Multi-stage YAML pipeline authored (Screenshot 5)
-- [ ] Task 5: All four stages succeeded and app verified (Screenshots 6–8)
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [✅] Task 1: React app imported into Azure Repos (Screenshot 1)
+- [✅] Task 2: New VM provisioned and Nginx configured (Screenshots 2–3)
+- [✅] Task 3: SSH Service Connection updated and validated (Screenshot 4)
+- [✅] Task 4: Multi-stage YAML pipeline authored (Screenshot 5)
+- [✅] Task 5: All four stages succeeded and app verified (Screenshots 6–8)
+- [✅] LinkedIn post published and URL submitted
+- [✅] No sensitive data exposed
 
 ---
 

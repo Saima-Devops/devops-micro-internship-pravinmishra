@@ -146,7 +146,7 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Healthy baseline confirmed on both providers before starting (Screenshot 1)
+- [✅] Task 1: Healthy baseline confirmed on both providers before starting (Screenshot 1)
 - [ ] Task 2: `CLAUDE.md` created with the workflow and safety rules (Screenshot 2)
 - [ ] Task 3: `pipeline-triage.sh` built with all five failure-category checks (Screenshot 3)
 - [ ] Task 4: Script run against the healthy pipeline showing a clean result (Screenshot 4)

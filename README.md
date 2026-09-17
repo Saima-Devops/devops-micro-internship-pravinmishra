@@ -124,14 +124,14 @@ https://dmi.pravinmishra.com/s/Saima-Devops.html
 | 08 | Azure Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_microsoftazure-azure-cloudcomputing-activity-7500100269976825857-1Vzf | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
 | 09 | Terraform | ✅ Started | ✅ Completed  | https://www.linkedin.com/posts/saima-usman_devops-terraform-aws-activity-7502085996671594496-M-lD | https://medium.com/@saimausman.dxb/when-devops-meets-agentic-ai-the-day-terraform-stopped-being-just-infrastructure-code-5fcebb3b8e24 |
 | 10 | Ansible | ✅ Started  | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-devops-terraform-ugcPost-7503559857472684032-_K9K | https://medium.com/@saimausman.dxb/from-hours-of-manual-configuration-to-minutes-of-automation-374090075d17 |
-| 11 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
+| 11 | Azure DevOps (CI/CD) | ✅ Started | ⏳ Pending | — | — |
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 
 **Status:** ✅ Completed Week-00 till Week-10<br>
-**Assignment:** ✅ Solved (till week-09)
+**Assignment:** ✅ Solved (till week-10)
 
 ---
 

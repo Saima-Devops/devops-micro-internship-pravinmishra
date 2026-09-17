@@ -20,7 +20,7 @@ Import `https://github.com/pravinmishraaws/Azure-Static-Website` into Azure Repo
 
 #### Screenshot 1 — Azure Repos showing the imported repository files with `index.html` visible
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-1.png)
 
 ---
 
@@ -34,13 +34,16 @@ Provision a Linux VM with Terraform (ports 22/80 open), then use Ansible to inst
 
 #### Screenshot 2 — Terraform output or cloud console showing the running VM and public IP
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-2.png)
 
 ---
 
 #### Screenshot 3 — Terminal showing Ansible completed successfully and Nginx is active
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-3b.png)
+
+![alt text](screenshots/Assign-2/Screenshot-3.png)
+
 
 ---
 
@@ -54,7 +57,7 @@ Create the password-based SSH Service Connection `ubuntu-nginx-ssh` pointing to 
 
 #### Screenshot 4 — SSH Service Connection configuration page showing the connection details and successful validation, with the password hidden
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-4.png)
 
 ---
 
@@ -68,7 +71,7 @@ Write a pipeline triggered on `main` that checks out the repo, copies files to `
 
 #### Screenshot 5 — Pipeline YAML definition open in the Azure DevOps editor
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-5.png)
 
 ---
 
@@ -82,13 +85,16 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 #### Screenshot 6 — Successful Azure DevOps pipeline run log summary
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-6a.png)
+
+![alt text](screenshots/Assign-2/Screenshot-6b.png)
+
 
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-7.png)
 
 ---
 
@@ -96,7 +102,23 @@ Add your screenshot here.
 
 Include the VM public URL. Describe any issue you faced and how you fixed it (e.g. parallelism/agent-pool issues).
 
-Write your answer here.
+
+### VM Public URL: 
+http://74.224.125.224
+
+The website was successfully deployed to the Azure Linux VM using an Azure DevOps YAML pipeline. The pipeline checked out the main branch, copied index.html to /var/www/html using CopyFilesOverSSH@0, and verified the deployment using SSH@0.
+
+### Issues faced and resolutions:
+
+VM SKU availability: The initial Standard_B1s VM size was unavailable in the South India region due to Azure capacity restrictions. I changed the VM size to Standard_B2ats_v2, after which Terraform successfully provisioned the VM.
+
+### Azure DevOps agent offline: 
+The self-hosted linux-agent was initially offline, causing the deployment pipeline to remain queued. I restarted the Azure DevOps agent on the azure-devops-agent VM using ./run.sh. The agent returned to Online, allowing the queued pipeline to execute successfully.
+
+### Service connection: 
+The pipeline initially could not find ubuntu-nginx-ssh. The SSH service connection was created and configured in the linux-agent-lab project with the web VM's public IP and azureuser credentials.
+
+Overall, the deployment was completed successfully using Terraform + Ansible + Azure DevOps + self-hosted Linux agent + Nginx.
 
 ---
 
@@ -109,13 +131,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Repository imported into Azure Repos (Screenshot 1)
-- [ ] Task 2: VM provisioned and Nginx configured (Screenshots 2–3)
-- [ ] Task 3: SSH Service Connection created and validated (Screenshot 4)
-- [ ] Task 4: YAML pipeline authored (Screenshot 5)
-- [ ] Task 5: Pipeline run succeeded and site verified (Screenshots 6–7)
-- [ ] VM URL and issue notes written (Notes)
-- [ ] No passwords, tokens, or credentials exposed
+- [✅] Task 1: Repository imported into Azure Repos (Screenshot 1)
+- [✅] Task 2: VM provisioned and Nginx configured (Screenshots 2–3)
+- [✅] Task 3: SSH Service Connection created and validated (Screenshot 4)
+- [✅] Task 4: YAML pipeline authored (Screenshot 5)
+- [✅] Task 5: Pipeline run succeeded and site verified (Screenshots 6–7)
+- [✅] VM URL and issue notes written (Notes)
+- [✅] No passwords, tokens, or credentials exposed
 
 ---
 
