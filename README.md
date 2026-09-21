@@ -4,7 +4,7 @@
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-![Weeks](https://img.shields.io/badge/Weeks_Completed-9%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-10%2F15-green?style=for-the-badge)
 
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.
@@ -55,7 +55,7 @@ This is not a course. It is an internship-style program — real deployments, re
 ### Leaderboard
 
 
-> 🥇 Cohort 3 Rank: **#_05_** 
+> 🥇 Cohort 3 Rank: **#_04_** 
 
 https://dmi.pravinmishra.com/s/Saima-Devops.html
 
@@ -75,12 +75,8 @@ https://dmi.pravinmishra.com/s/Saima-Devops.html
 
 **Your stack (uncomment each badge as you earn it):**
 
-[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile <br> [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud  [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)  Week 07 → Azure Cloud <br> [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) Week 08 → Terraform [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) Week 09 → Ansible
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile <br> [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud  [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)  Week 07 → Azure Cloud <br> [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) Week 08 → Terraform [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) Week 09 → Ansible [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) Week 10 → Azure DevOps CI/CD
 
-
-
-<!-- Week 10 → Azure DevOps CI/CD -->
-<!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
 
 <!-- Week 11 → Docker -->
 <!-- [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) -->
@@ -124,7 +120,7 @@ https://dmi.pravinmishra.com/s/Saima-Devops.html
 | 08 | Azure Cloud | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_microsoftazure-azure-cloudcomputing-activity-7500100269976825857-1Vzf | https://medium.com/@saimausman.dxb/a-hands-on-guide-to-azure-networking-vms-nginx-node-js-806e4fc0ae0c |
 | 09 | Terraform | ✅ Started | ✅ Completed  | https://www.linkedin.com/posts/saima-usman_devops-terraform-aws-activity-7502085996671594496-M-lD | https://medium.com/@saimausman.dxb/when-devops-meets-agentic-ai-the-day-terraform-stopped-being-just-infrastructure-code-5fcebb3b8e24 |
 | 10 | Ansible | ✅ Started  | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-devops-terraform-ugcPost-7503559857472684032-_K9K | https://medium.com/@saimausman.dxb/from-hours-of-manual-configuration-to-minutes-of-automation-374090075d17 |
-| 11 | Azure DevOps (CI/CD) | ✅ Started | ⏳ Pending | — | — |
+| 11 | Azure DevOps (CI/CD) | ✅ Started | ⏳ ✅ Completed | https://www.linkedin.com/posts/saima-usman_azuredevops-devops-azure-share-7507144574600085504-bsmr/| https://medium.com/@saimausman.dxb/ai-meets-devops-building-a-safe-azure-devops-pipeline-failure-triage-workflow-03f308b66c85?sharedUserId=saimausman.dxb|
 | 12 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
