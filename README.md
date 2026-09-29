@@ -50,7 +50,7 @@ This is not a course. It is an internship-style program — real deployments, re
 |------|-------|------|
 | Week 08 | 🏆 Champion of the Week | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-terraform-agenticai-activity-7502794676480040960-ZkUR?utm_source=share&utm_medium=member_desktop&rcm=ACoAABsfrYoBkq_t-PkQCt7fEB9Ajmp98YTHl_g |
 
-![alt text](<Saima Usman-DMI-Champion of the week.png>)
+![alt text](<badges/Saima Usman-DMI-Champion of the week.png>)
 
 ### Leaderboard
 
