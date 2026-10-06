@@ -30,7 +30,7 @@ backend/
 docker-compose.yml
 ```
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-1.png)
 
 ---
 
@@ -47,7 +47,9 @@ backend/.dockerignore
 
 Ensure that no real passwords, tokens, or secrets are visible.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-2.png)
+
+![alt text](screenshots/Assignment-06/Screenshot-3.png)
 
 ---
 
@@ -63,7 +65,7 @@ Prepare Dockerfiles for the frontend and backend services and build both service
 
 Add a screenshot showing the completed `frontend/Dockerfile`.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-4.png)
 
 ---
 
@@ -71,7 +73,7 @@ Add your screenshot here.
 
 Add a screenshot showing the completed `backend/Dockerfile`.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-5.png)
 
 ---
 
@@ -83,7 +85,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker compose build
 ```
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-7.png)
 
 ---
 
@@ -105,7 +107,9 @@ Add a screenshot showing the MySQL service in `docker-compose.yml`, including:
 - `mysql_data` volume mount
 - No published MySQL port
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-9.png)
+
+![alt text](screenshots/Assignment-06/Screenshot-10.png)
 
 ---
 
@@ -118,7 +122,7 @@ Add a screenshot showing the backend service configuration, including:
 - Browser frontend origin configured for CORS
 - Published backend port
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-11.png)
 
 ---
 
@@ -130,7 +134,7 @@ Add a screenshot showing the frontend service configuration, including:
 - `depends_on` for the backend service
 - Browser-facing `NEXT_PUBLIC_API_URL`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-12.png)
 
 ---
 
@@ -138,7 +142,7 @@ Add your screenshot here.
 
 Add a screenshot showing the `mysql_data` volume definition in `docker-compose.yml`.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/volume.png)
 
 ---
 
@@ -160,7 +164,7 @@ docker compose ps
 
 The output must show the MySQL, backend, and frontend services running. MySQL must show as healthy.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-14.png)
 
 ---
 
@@ -174,7 +178,7 @@ docker compose logs mysql backend --tail=50
 
 The logs must show MySQL readiness and successful backend database connection.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-13.png)
 
 ---
 
@@ -192,7 +196,13 @@ Add a browser screenshot showing successful user registration or login.
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Register.png)
+
+![alt text](screenshots/Assignment-06/Register-2.png)
+
+![alt text](screenshots/Assignment-06/login.png)
+
+![alt text](screenshots/Assignment-06/homepg01.png)
 
 ---
 
@@ -202,7 +212,11 @@ Add a browser screenshot showing a created book review visible in the applicatio
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/homepg02.png)
+
+![alt text](screenshots/Assignment-06/book-review.png)
+
+![alt text](screenshots/Assignment-06/review-submitted.png)
 
 ---
 
@@ -213,7 +227,7 @@ Add a browser developer-tools screenshot with:
 - The Network tab showing a successful API request
 - The Console drawer showing no CORS error after the API interaction
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-15.png)
 
 ---
 
@@ -231,7 +245,7 @@ Add a browser screenshot showing the registered user or created review before th
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/review-before-teardown.png)
 
 ---
 
@@ -247,7 +261,7 @@ docker compose ps
 
 Do not use `docker compose down -v`.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-16.png)
 
 ---
 
@@ -257,7 +271,13 @@ Add a browser screenshot showing the same registered user or review after the st
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-06/Screenshot-17.png)
+
+![alt text](screenshots/Assignment-06/Screenshot-18.png)
+
+**Clean-Up**
+
+![alt text](screenshots/Assignment-06/Screenshot-19.png)
 
 ---
 
@@ -277,13 +297,23 @@ Write a short explanation of 5–8 lines covering:
 - When a full reset is useful
 - Why a full reset must not be used before persistence evidence is captured
 
-Write your explanation here.
+`docker compose down` removes the project’s containers and networks while preserving named volumes and images. 
+
+Keeping the `mysql_data` volume preserves MySQL accounts, books, and reviews across container recreation.  
+
+Starting the stack again reconnects MySQL to the existing data stored in that volume.  
+
+`docker compose down -v` also removes the project’s named volumes, deleting the stored database data.  
+
+A full reset is useful for testing first-time initialization or clearing disposable development data.  
+
+Capture persistence evidence before a full reset, because deleting the volume prevents proving that existing data survives a restart.
 
 ---
 
 # Final Public Frontend URL
 
-**Frontend URL:** `http://<VM_PUBLIC_IP>:<FRONTEND_PORT>`
+**Frontend URL:** `http://16.4.68.128:3000`
 
 Replace the placeholder with your working application URL.
 
@@ -291,7 +321,7 @@ Replace the placeholder with your working application URL.
 
 # GitHub Repository URL
 
-**Your Fork or Repository URL:** `Add your GitHub repository URL here`
+**Your Fork or Repository URL:** https://github.com/Saima-Devops/Book-Review-App
 
 ---
 
@@ -303,37 +333,37 @@ Create a LinkedIn post about the Book Review App deployment and what you learned
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://lnkd.in/p/eCPArVbh
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of your published LinkedIn post here.
+![alt text](screenshots/Assignment-06/linkedin-post.png)
 
 ---
 
 # Submission Checklist
 
-- [ ] Book Review App repository forked and used
-- [ ] `.env` excluded from Git tracking
-- [ ] `.env.example` contains only safe placeholder values
-- [ ] Frontend and backend Dockerfiles created or confirmed
-- [ ] MySQL health check configured
-- [ ] Backend waits for healthy MySQL
-- [ ] Backend uses `mysql` as the database hostname
-- [ ] Frontend API URL uses the VM public IP and backend port
-- [ ] Backend CORS origin matches the frontend origin
-- [ ] MySQL port 3306 is not publicly exposed
-- [ ] Registration and login work
-- [ ] Book review creation works
-- [ ] Data persists after a non-destructive down/up cycle
-- [ ] Screenshots 1–17 included
-- [ ] Teardown explanation completed
-- [ ] Public frontend URL included
-- [ ] GitHub repository URL included
-- [ ] LinkedIn post URL and screenshot included
-- [ ] Full name visible in required terminal screenshots
-- [ ] Browser screenshots include a full-name caption
-- [ ] No sensitive information exposed
+- [✅] Book Review App repository forked and used
+- [✅] `.env` excluded from Git tracking
+- [✅] `.env.example` contains only safe placeholder values
+- [✅] Frontend and backend Dockerfiles created or confirmed
+- [✅] MySQL health check configured
+- [✅] Backend waits for healthy MySQL
+- [✅] Backend uses `mysql` as the database hostname
+- [✅] Frontend API URL uses the VM public IP and backend port
+- [✅] Backend CORS origin matches the frontend origin
+- [✅] MySQL port 3306 is not publicly exposed
+- [✅] Registration and login work
+- [✅] Book review creation works
+- [✅] Data persists after a non-destructive down/up cycle
+- [✅] Screenshots 1–17 included
+- [✅] Teardown explanation completed
+- [✅] Public frontend URL included
+- [✅] GitHub repository URL included
+- [✅] LinkedIn post URL and screenshot included
+- [✅] Full name visible in required terminal screenshots
+- [✅] Browser screenshots include a full-name caption
+- [✅] No sensitive information exposed
 
 ---
 
