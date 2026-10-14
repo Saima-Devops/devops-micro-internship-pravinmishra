@@ -20,7 +20,7 @@ Create the `~/k8s-labs/deployments` working directory.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/deployments` working directory
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-3/Screenshot-1.png)
 
 ---
 
@@ -34,7 +34,9 @@ Create `nginx-deployment.yaml` with two replicas and image `nginx:1.21.1`, apply
 
 #### Screenshot 2 — Manifest plus `kubectl` output showing the Deployment, ReplicaSet, and two Pods
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-3/Screenshot-2.png)
+![alt text](screenshots/Assignment-3/Screenshot-3.png)
+
 
 ---
 
@@ -48,7 +50,9 @@ Add `strategy.rollingUpdate` with `maxSurge: 1` and `maxUnavailable: 0` to the D
 
 #### Screenshot 3 — Deployment YAML showing the RollingUpdate strategy and successful apply output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-3/Screenshot-4.png)
+
+![alt text](screenshots/Assignment-3/Screenshot-5.png)
 
 ---
 
@@ -62,7 +66,15 @@ Update the image to `nginx:1.23.1` with `kubectl set image`, watch the rollout, 
 
 #### Screenshot 4 — Rolling-update status, multiple ReplicaSets, and successful rollback/history output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-3/Screenshot-6.png)
+
+![alt text](screenshots/Assignment-3/Screenshot-7.png)
+
+## Rollback:
+
+![alt text](screenshots/Assignment-3/Screenshot-8.png)
+
+![alt text](screenshots/Assignment-3/Screenshot-9.png)
 
 ---
 
@@ -76,7 +88,9 @@ Scale to five replicas, verify, then scale back to two.
 
 #### Screenshot 5 — Terminal showing the scale-up and scale-down results
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-3/Screenshot-10.png)
+
+![alt text](screenshots/Assignment-3/Screenshot-11.png)
 
 ---
 
@@ -84,7 +98,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+In this lab, I created an NGINX Deployment with two replicas using the image `nginx:1.21.1` and verified the Deployment, ReplicaSet, and Pods. I configured a RollingUpdate strategy with `maxSurge: 1` and `maxUnavailable: 0`, allowing one extra Pod during updates while keeping the desired number of Pods available. I updated the image to `nginx:1.23.1`, monitored the rollout, and rolled back to the previous version using `kubectl rollout undo`. I also checked the rollout history, scaled the Deployment to five replicas, and then reduced it back to two. This lab demonstrated how Kubernetes Deployments manage replicas, controlled updates, rollbacks, and scaling.
 
 ---
 
@@ -97,12 +111,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Lab directory created (Screenshot 1)
-- [ ] Task 2: Two-replica Deployment applied (Screenshot 2)
-- [ ] Task 3: RollingUpdate strategy configured (Screenshot 3)
-- [ ] Task 4: Image updated and rolled back (Screenshot 4)
-- [ ] Task 5: Scaled up and down (Screenshot 5)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Lab directory created (Screenshot 1)
+- [✅] Task 2: Two-replica Deployment applied (Screenshot 2)
+- [✅] Task 3: RollingUpdate strategy configured (Screenshot 3)
+- [✅] Task 4: Image updated and rolled back (Screenshot 4)
+- [✅] Task 5: Scaled up and down (Screenshot 5)
+- [✅] Reflection notes written (Notes)
 
 ---
 

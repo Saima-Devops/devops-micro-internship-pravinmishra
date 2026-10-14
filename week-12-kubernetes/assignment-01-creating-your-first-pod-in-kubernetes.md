@@ -20,7 +20,7 @@ Create the `~/k8s-labs/pods` working directory for all Pod-related files.
 
 #### Screenshot 1 — Terminal showing the `~/k8s-labs/pods` working directory
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-1/Screenshot-1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create `nginx-pod` with `kubectl run --image=nginx`, verify it reaches Running, 
 
 #### Screenshot 2 — Terminal showing `nginx-pod` in Running state before deletion
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-1/Screenshot-2.png)
 
 ---
 
@@ -48,7 +48,9 @@ Write `nginx-pod.yaml` (apiVersion `v1`, kind `Pod`, label `app: nginx`, contain
 
 #### Screenshot 3 — `nginx-pod.yaml` and terminal output showing `nginx-pod` in Running state
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-1/Screenshot-3.png)
+
+![alt text](screenshots/Assignment-1/Screenshot-4.png)
 
 ---
 
@@ -62,7 +64,13 @@ Run `kubectl describe`, `kubectl logs`, and `kubectl exec -it ... -- /bin/bash` 
 
 #### Screenshot 4 — Terminal showing `kubectl describe`, `kubectl logs`, or the `/usr/share/nginx/html` directory
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-1/Screenshot-5.png)
+
+![alt text](screenshots/Assignment-1/Screenshot-6.png)
+
+![alt text](screenshots/Assignment-1/Screenshot-7.png)
+
+![alt text](screenshots/Assignment-1/Screenshot-8.png)
 
 ---
 
@@ -75,11 +83,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Lab directory created (Screenshot 1)
-- [ ] Task 2: Pod created imperatively, verified, and deleted (Screenshot 2)
-- [ ] Task 3: Pod created declaratively and verified Running (Screenshot 3)
-- [ ] Task 4: Pod inspected via describe/logs/exec (Screenshot 4)
-- [ ] Understood the difference between imperative and declarative methods
+- [✅] Task 1: Lab directory created (Screenshot 1)
+- [✅] Task 2: Pod created imperatively, verified, and deleted (Screenshot 2)
+- [✅] Task 3: Pod created declaratively and verified Running (Screenshot 3)
+- [✅] Task 4: Pod inspected via describe/logs/exec (Screenshot 4)
+- [✅] Understood the difference between imperative and declarative methods
 
 ---
 
