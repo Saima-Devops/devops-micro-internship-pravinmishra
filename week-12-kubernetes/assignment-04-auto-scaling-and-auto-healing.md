@@ -20,7 +20,7 @@ Create the `~/k8s-labs/autoscaling` working directory.
 
 #### Screenshot 1 — Terminal showing the `autoscaling` directory
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-4/Screenshot-1.png)
 
 ---
 
@@ -34,7 +34,9 @@ Create `demo-autohealing` (two replicas), delete one Pod, and confirm the desire
 
 #### Screenshot 2 — Deleted Pod and replacement Pod with the replica count restored
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-4/Screenshot-2.png)
+
+![alt text](screenshots/Assignment-4/Screenshot-3.png)
 
 ---
 
@@ -48,7 +50,11 @@ Deploy `nginx-deployment` with CPU `requests: 100m` / `limits: 200m`, then enabl
 
 #### Screenshot 3 — Deployment resources plus successful Metrics Server status
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-4/Screenshot-4.png)
+
+![alt text](screenshots/Assignment-4/Screenshot-5.png)
+
+![alt text](screenshots/Assignment-4/Screenshot-6.png)
 
 ---
 
@@ -62,7 +68,16 @@ Create an HPA (imperatively via `kubectl autoscale` or declaratively via `autosc
 
 #### Screenshot 4 — `kubectl get hpa` and `kubectl describe hpa nginx-hpa` output
 
-Add your screenshot here.
+#### Method#1: Imperative
+
+![alt text](screenshots/Assignment-4/Screenshot-7.png)
+
+#### Method#2: Declarative (production style)
+
+![alt text](screenshots/Assignment-4/Screenshot-8.png)
+
+![alt text](screenshots/Assignment-4/Screenshot-9.png)
+
 
 ---
 
@@ -76,7 +91,9 @@ Generate CPU load inside an NGINX Pod (`yes > /dev/null`) and monitor whether th
 
 #### Screenshot 5 — HPA output showing current metrics and any replica increase
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-4/Screenshot-11.png)
+
+![alt text](screenshots/Assignment-4/Screenshot-10.png)
 
 ---
 
@@ -84,7 +101,9 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+In this lab, I demonstrated Kubernetes auto-healing by deleting one Pod and observing a replacement restore the Deployment to two replicas. I configured NGINX with CPU requests of `100m` and limits of `200m`, enabled Metrics Server, and created an HPA with a minimum of two replicas, a maximum of five, and a target CPU utilization of 50%.
+
+After generating CPU load, I monitored the HPA using `kubectl get hpa -w`. CPU utilization reached 100%, exceeding the 50% target, and the replica count automatically increased from two to four. CPU utilization later dropped to 0%, while four replicas remained at the end of the observation. This lab demonstrated how Kubernetes replaces missing Pods and automatically scales workloads in response to CPU demand.
 
 ---
 
@@ -97,12 +116,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Lab directory created (Screenshot 1)
-- [ ] Task 2: Auto-healing observed (Screenshot 2)
-- [ ] Task 3: HPA-ready Deployment applied and Metrics Server verified (Screenshot 3)
-- [ ] Task 4: HPA created and inspected (Screenshot 4)
-- [ ] Task 5: CPU load generated and scaling observed (Screenshot 5, optional)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Lab directory created (Screenshot 1)
+- [✅] Task 2: Auto-healing observed (Screenshot 2)
+- [✅] Task 3: HPA-ready Deployment applied and Metrics Server verified (Screenshot 3)
+- [✅] Task 4: HPA created and inspected (Screenshot 4)
+- [✅] Task 5: CPU load generated and scaling observed (Screenshot 5, optional)
+- [✅] Reflection notes written (Notes)
 
 ---
 
