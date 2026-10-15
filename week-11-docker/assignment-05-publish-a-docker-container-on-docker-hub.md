@@ -137,8 +137,6 @@ Write a short explanation covering:
 - Why a container registry is useful in DevOps workflows
 - Why production deployments should use versioned image tags instead of relying only on `latest`
 
-Write your explanation here.
-
 ## My Explanations:
 
 **Image tagging** gives an image a destination and an identifier, such as `saim2026/my-react-app:v1.0.0`. Before pushing to Docker Hub, the image needs a tag that identifies the correct account and repository.

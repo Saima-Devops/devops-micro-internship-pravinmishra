@@ -20,7 +20,7 @@ Deploy two NGINX Pods without probes (`00-nginx-deploy-baseline.yaml`).
 
 #### Screenshot 1 — Baseline Deployment and two running Pods
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-6/Screenshot-2.png)
 
 ---
 
@@ -34,7 +34,9 @@ Add an HTTP liveness probe on `/` port 80 (`01-nginx-deploy-liveness.yaml`) and 
 
 #### Screenshot 2 — Pod description showing the liveness probe
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-6/Screenshot-3.png)
+
+![alt text](screenshots/Assignment-6/Screenshot-4.png)
 
 ---
 
@@ -48,7 +50,9 @@ Change the liveness path to `/does-not-exist`, apply it, and watch `RESTARTS` in
 
 #### Screenshot 3 — Pod RESTARTS increment and the corresponding liveness failure events
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-6/Screenshot-5.png)
+
+![alt text](screenshots/Assignment-6/Screenshot-6.png)
 
 ---
 
@@ -62,7 +66,7 @@ Reapply the good liveness manifest and confirm restart counts stop increasing.
 
 #### Screenshot 4 — Stable Pod state after the fixed manifest is applied
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-6/Screenshot-7.png)
 
 ---
 
@@ -76,7 +80,11 @@ Review recommended probe ranges and retain or delete the Deployment.
 
 #### Screenshot 5 — Final healthy state and any troubleshooting evidence used
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-6/Screenshot-8.png)
+
+![alt text](screenshots/Assignment-6/Screenshot-9.png)
+
+![alt text](screenshots/Assignment-6/Screenshot-10.png)
 
 ---
 
@@ -84,7 +92,9 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+In this lab, I deployed two NGINX Pods and configured an HTTP liveness probe on `/` at port 80, checked every 10 seconds after an initial delay. I changed the probe path to `/does-not-exist` to trigger failures, then observed container restart counts increase and inspected the corresponding failure events. After restoring the healthy probe configuration, I confirmed that the Pods stabilized and restart counts stopped increasing.
+
+This lab demonstrated how liveness probes allow the kubelet to detect an unhealthy container and restart it automatically. I also reviewed probe delays, timeouts, and failure thresholds to understand how appropriate tuning helps prevent unnecessary restarts.
 
 ---
 
@@ -97,12 +107,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Baseline Deployment applied (Screenshot 1)
-- [ ] Task 2: Liveness probe added and verified (Screenshot 2)
-- [ ] Task 3: Liveness restart triggered and observed (Screenshot 3)
-- [ ] Task 4: Probe restored and stabilized (Screenshot 4)
-- [ ] Task 5: Tuning reviewed / cleanup completed (Screenshot 5)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Baseline Deployment applied (Screenshot 1)
+- [✅] Task 2: Liveness probe added and verified (Screenshot 2)
+- [✅] Task 3: Liveness restart triggered and observed (Screenshot 3)
+- [✅] Task 4: Probe restored and stabilized (Screenshot 4)
+- [✅] Task 5: Tuning reviewed / cleanup completed (Screenshot 5)
+- [✅] Reflection notes written (Notes)
 
 ---
 

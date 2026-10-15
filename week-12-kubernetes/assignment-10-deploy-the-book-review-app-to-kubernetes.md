@@ -213,17 +213,17 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Cluster and tooling verified (Screenshots 1–2)
-- [ ] Task 2: Architecture diagram completed (Screenshot 3)
-- [ ] Task 3: ConfigMaps and Secrets created (Screenshots 4–5)
-- [ ] Task 4: MySQL data tier deployed and verified (Screenshots 6–7)
-- [ ] Task 5: Backend tier deployed internally (Screenshots 8–9)
-- [ ] Task 6: Frontend deployed behind Nginx (Screenshots 10–11)
-- [ ] Task 7: External/internal networking configured (Screenshots 12–13)
-- [ ] Task 8: End-to-end validation completed (Screenshots 14–18)
-- [ ] Task 9: Optional production enhancements documented (Screenshot 19)
-- [ ] Report completed (Notes)
-- [ ] No sensitive information exposed
+- [✅] Task 1: Cluster and tooling verified (Screenshots 1–2)
+- [✅] Task 2: Architecture diagram completed (Screenshot 3)
+- [✅] Task 3: ConfigMaps and Secrets created (Screenshots 4–5)
+- [✅] Task 4: MySQL data tier deployed and verified (Screenshots 6–7)
+- [✅] Task 5: Backend tier deployed internally (Screenshots 8–9)
+- [✅] Task 6: Frontend deployed behind Nginx (Screenshots 10–11)
+- [✅] Task 7: External/internal networking configured (Screenshots 12–13)
+- [✅] Task 8: End-to-end validation completed (Screenshots 14–18)
+- [✅] Task 9: Optional production enhancements documented (Screenshot 19)
+- [✅] Report completed (Notes)
+- [✅] No sensitive information exposed
 
 ---
 

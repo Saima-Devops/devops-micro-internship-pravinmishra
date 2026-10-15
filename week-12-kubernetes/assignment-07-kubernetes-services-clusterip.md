@@ -20,7 +20,7 @@ Create two healthy, labeled NGINX Pods (readiness + liveness probes) as Service 
 
 #### Screenshot 1 — Two Ready Pods with labels and IPs
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-7/Screenshot-1.png)
 
 ---
 
@@ -34,7 +34,9 @@ Create `nginx-svc` (type `ClusterIP`, selector `app: nginx`, port 80) and inspec
 
 #### Screenshot 2 — Service ClusterIP plus populated Endpoints and EndpointSlices
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-7/Screenshot-2.png)
+
+![alt text](screenshots/Assignment-7/Screenshot-3.png)
 
 ---
 
@@ -48,7 +50,9 @@ Create a BusyBox `tester` Pod and call `nginx-svc` by short name, ClusterIP, and
 
 #### Screenshot 3 — Successful `wget` responses and `nslookup` output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-7/Screenshot-4.png)
+
+![alt text](screenshots/Assignment-7/Screenshot-5.png)
 
 ---
 
@@ -62,7 +66,15 @@ Change the Service selector to `app: does-not-match`, confirm endpoints become e
 
 #### Screenshot 4 — Empty endpoints during failure and restored endpoints after the fix
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-7/Screenshot-6.png)
+
+![alt text](screenshots/Assignment-7/Screenshot-7.png)
+
+![alt text](screenshots/Assignment-7/Screenshot-8.png)
+
+![alt text](screenshots/Assignment-7/Screenshot-9.png)
+
+![alt text](screenshots/Assignment-7/Screenshot-10.png)
 
 ---
 
@@ -76,7 +88,13 @@ Scale to one replica, apply a broken readiness patch, confirm the NotReady Pod i
 
 #### Screenshot 5 — NotReady Pod with excluded endpoint, followed by restored endpoint membership
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-7/Screenshot-11.png)
+![alt text](screenshots/Assignment-7/Screenshot-12.png)
+![alt text](screenshots/Assignment-7/Screenshot-13.png)
+![alt text](screenshots/Assignment-7/Screenshot-14.png)
+![alt text](screenshots/Assignment-7/Screenshot-15.png)
+![alt text](screenshots/Assignment-7/Screenshot-16.png)
+![alt text](screenshots/Assignment-7/Screenshot-17.png)
 
 ---
 
@@ -90,7 +108,11 @@ Verify the Service path, then optionally delete `tester` and `nginx-svc`.
 
 #### Screenshot 6 — Final verification or optional cleanup output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-7/Screenshot-18.png)
+
+### Clean Up
+
+![alt text](screenshots/Assignment-7/Screenshot-19.png)
 
 ---
 
@@ -98,7 +120,9 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+In this lab, I deployed two NGINX Pods with readiness and liveness probes and created an internal ClusterIP Service named `nginx-svc`. I inspected its ClusterIP, Endpoints, and EndpointSlices, then verified access by Service DNS name and virtual IP from a BusyBox tester Pod. I also checked DNS resolution using `nslookup`.
+
+Changing the Service selector to `app: does-not-match` removed its backend endpoints and caused requests to fail. Restoring `app: nginx` restored connectivity. I then demonstrated readiness-aware routing by breaking the readiness probe and confirming that the NotReady Pod was excluded from ready Service endpoints. Restoring the healthy configuration made the backend available again. This lab demonstrated how ClusterIP Services provide stable internal access through DNS, label selectors, and readiness-aware routing.
 
 ---
 
@@ -111,13 +135,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Probed NGINX Deployment applied (Screenshot 1)
-- [ ] Task 2: ClusterIP Service created and inspected (Screenshot 2)
-- [ ] Task 3: Service reached by DNS and ClusterIP (Screenshot 3)
-- [ ] Task 4: Selector broken and fixed (Screenshot 4)
-- [ ] Task 5: Readiness-aware routing proven (Screenshot 5)
-- [ ] Task 6: Verified / cleaned up (Screenshot 6)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: Probed NGINX Deployment applied (Screenshot 1)
+- [✅] Task 2: ClusterIP Service created and inspected (Screenshot 2)
+- [✅] Task 3: Service reached by DNS and ClusterIP (Screenshot 3)
+- [✅] Task 4: Selector broken and fixed (Screenshot 4)
+- [✅] Task 5: Readiness-aware routing proven (Screenshot 5)
+- [✅] Task 6: Verified / cleaned up (Screenshot 6)
+- [✅] Reflection notes written (Notes)
 
 ---
 

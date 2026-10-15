@@ -111,13 +111,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: AKS cluster provisioned and connected (Screenshot 1)
-- [ ] Task 2: Probed NGINX Deployment applied (Screenshot 2)
-- [ ] Task 3: LoadBalancer Service created and tested (Screenshot 3)
-- [ ] Task 4: Readiness impact on public traffic proven (Screenshot 4)
-- [ ] Task 5: Scaled behind the stable endpoint (Screenshot 5)
-- [ ] Task 6: Verified / cleaned up Azure resources (Screenshot 6)
-- [ ] Reflection notes written (Notes)
+- [✅] Task 1: AKS cluster provisioned and connected (Screenshot 1)
+- [✅] Task 2: Probed NGINX Deployment applied (Screenshot 2)
+- [✅] Task 3: LoadBalancer Service created and tested (Screenshot 3)
+- [✅] Task 4: Readiness impact on public traffic proven (Screenshot 4)
+- [✅] Task 5: Scaled behind the stable endpoint (Screenshot 5)
+- [✅] Task 6: Verified / cleaned up Azure resources (Screenshot 6)
+- [✅] Reflection notes written (Notes)
 
 ---
 

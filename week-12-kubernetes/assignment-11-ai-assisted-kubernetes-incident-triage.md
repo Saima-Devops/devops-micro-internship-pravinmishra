@@ -172,15 +172,15 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Healthy baseline confirmed and workspace created (Screenshots 1–2)
-- [ ] Task 2: `CLAUDE.md` safety rules added (Screenshot 3)
-- [ ] Task 3: Read-only five-check plan produced before scripting (Screenshot 4)
-- [ ] Task 4: Triage script built and validated (Screenshots 5–6)
-- [ ] Task 5: Script run against the healthy cluster (Screenshot 7)
-- [ ] Task 6: `/k8s-triage` skill built and run against the healthy baseline (Screenshots 8–9)
-- [ ] Task 7: Incident simulated and correctly diagnosed without being applied (Screenshots 10–11)
-- [ ] Task 8: Recovery applied by the human, verified, and summarized (Screenshots 12–13, Notes)
-- [ ] No kubeconfig, tokens, or cluster credentials exposed
+- [✅] Task 1: Healthy baseline confirmed and workspace created (Screenshots 1–2)
+- [✅] Task 2: `CLAUDE.md` safety rules added (Screenshot 3)
+- [✅] Task 3: Read-only five-check plan produced before scripting (Screenshot 4)
+- [✅] Task 4: Triage script built and validated (Screenshots 5–6)
+- [✅] Task 5: Script run against the healthy cluster (Screenshot 7)
+- [✅] Task 6: `/k8s-triage` skill built and run against the healthy baseline (Screenshots 8–9)
+- [✅] Task 7: Incident simulated and correctly diagnosed without being applied (Screenshots 10–11)
+- [✅] Task 8: Recovery applied by the human, verified, and summarized (Screenshots 12–13, Notes)
+- [✅] No kubeconfig, tokens, or cluster credentials exposed
 
 ---
 
