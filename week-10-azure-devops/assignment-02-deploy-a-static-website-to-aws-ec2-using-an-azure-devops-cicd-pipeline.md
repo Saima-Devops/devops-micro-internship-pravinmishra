@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-1.png)
 
 ---
 
@@ -65,7 +65,8 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-4.png)
+
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +92,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-5.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +116,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-6a.png)
 
 ---
 
@@ -136,7 +137,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+
 
 ## Final Website URL
 
@@ -144,7 +145,7 @@ Add your screenshot here.
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+http://74.224.125.224
 
 ---
 
@@ -152,7 +153,9 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+This project demonstrates an end-to-end CI/CD workflow for deploying a static website to an `AWS EC2` instance using `Azure DevOps`. `Terraform` was used to provision the EC2 infrastructure and security group, while `Ansible` configured the server, installed and enabled `Nginx`, and prepared the web directory. 
+
+The website source code was stored in `Azure Repos`, and an Azure DevOps `YAML` pipeline running on a self-hosted agent automatically validated and deployed the website using `CopyFilesOverSSH`. The pipeline then used `SSH` verification to confirm that the website files were deployed, Nginx was active, and the web server returned `HTTP 200`. The final website was successfully verified through the EC2 public IP and displays the deployed website with my full name, `Saima Usman`.
 
 ---
 
@@ -167,11 +170,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![alt text](screenshots/Assign-2/Screenshot-6.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+https://www.linkedin.com/posts/saima-usman_azuredevops-devops-azure-share-7505684729455603712-HZdy
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 

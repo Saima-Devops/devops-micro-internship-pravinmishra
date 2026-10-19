@@ -169,6 +169,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
 ![alt text](screenshots/Assign-4/ansible-pipeline.jpg)
+
 ---
 
 ### Screenshot 4 — Successful Ansible Play Recap
@@ -256,8 +257,11 @@ Write a short explanation of why separate Infrastructure and Application Reposit
 
 
 
-[Write your explanation here.]
+I split the project into two repositories because infrastructure and application code change for different reasons, at different speeds, and are usually owned by different teams. 
 
+The Infrastructure Repository (infra-epicbook) holds only Terraform and its pipeline. Only that pipeline is authorized to use the Azure Resource Manager service connection, so an application change can never create or delete cloud resources. 
+
+The Application Repository (theepicbook) holds EpicBook, the Ansible code and its pipeline. Only that pipeline can use the SSH key in Secure Files. Each repository has its own history, triggers and permissions, which keeps changes smaller, reviews clearer, and access limited to what each pipeline actually needs.
 
 ---
 

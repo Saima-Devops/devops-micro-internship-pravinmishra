@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-1.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-9.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,9 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-10.png)
+
+![alt text](screenshots/Assign-3/Screenshot-13.png)
 
 ---
 
@@ -122,7 +124,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-11.png)
 
 ---
 
@@ -143,7 +145,7 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-12.png)
 
 ## Final Application URL
 
@@ -151,7 +153,7 @@ Add your screenshot here.
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+http://20.235.160.151
 
 ---
 
@@ -159,7 +161,17 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+I built a four-stage Azure DevOps pipeline (Build → Test → Publish → Deploy) that automatically deploys a React application to an Nginx web server whenever a commit is pushed to main. 
+
+The `Build stage` installs Node.js, runs npm run build, and publishes the compiled output as a pipeline artifact. 
+
+The `Test stage` reinstalls dependencies independently and runs the test suite in non-interactive CI mode, so a broken build never reaches deployment. 
+
+The `Publish stage` downloads the build artifact, verifies index.html and the static assets are present, and republishes it as an approved deployment package.
+
+The `Deploy stage` downloads that package, copies it to /var/www/html on the target VM over SSH using CopyFilesOverSSH@0, then runs a remote verification step confirming the files exist, Nginx is active, and the site returns an `HTTP 200` response. 
+
+Each stage only runs if the previous one succeeded, so a failure anywhere stops the release before it reaches the live server. Along the way I resolved an agent out-of-memory crash (fixed by adding swap space to the pipeline agent VM) and an SSH connection timeout caused by the target VM's security group not allowing traffic from the agent's IP.
 
 ---
 
@@ -174,11 +186,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![alt text](screenshots/Assign-3/Screenshot-14.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://lnkd.in/p/g7A_umzK
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 

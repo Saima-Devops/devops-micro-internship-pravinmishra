@@ -70,7 +70,14 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-Add your screenshot here.
+![alt text](screenshots/Assign-4/Screenshot-18.png)
+
+![alt text](screenshots/Assign-4/Screenshot-15.png)
+
+![alt text](screenshots/Assign-4/Screenshot-11.jpg)
+
+![alt text](screenshots/Assign-4/Screenshot-12.jpg)
+
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -86,7 +93,11 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Azure Database for MySQL Flexible Server
 * Related EpicBook resources
 
-Add your screenshot here.
+![alt text](screenshots/Assign-4/Screenshot-2.png)
+
+![alt text](screenshots/Assign-4/Screenshot-3.png)
+
+![alt text](screenshots/Assign-4/Screenshot-5.png)
 
 > Hide sensitive IDs, credentials, and database details.
 
@@ -124,7 +135,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
-Add your screenshot here.
+![alt text](screenshots/Assign-4/ansible-pipeline.jpg)
 
 ---
 
@@ -137,7 +148,7 @@ Add a screenshot of the Application Pipeline log showing:
 * Zero failed hosts
 * Zero unreachable hosts
 
-Add your screenshot here.
+![alt text](screenshots/Assign-4/Screenshot-14.jpg)
 
 > Do not expose the SSH private key, MySQL password, Client Secret, or complete database connection string.
 
@@ -162,7 +173,12 @@ Add a browser screenshot showing:
 
 The screenshot may show a product, cart, or successful order view.
 
-Add your screenshot here.
+![alt text](screenshots/Assign-4/Screenshot-8.png)
+
+![alt text](screenshots/Assign-4/Screenshot-9.png)
+
+![alt text](screenshots/Assign-4/Screenshot-10.png)
+
 
 > Do not expose credentials or sensitive information.
 
@@ -172,15 +188,15 @@ Add your screenshot here.
 
 ## Frontend Application URL
 
-[Paste your final EpicBook application URL here.]
+http://52.172.94.142
 
 ## Infrastructure Repository URL
 
-[Paste your Infrastructure Repository URL here.]
+https://github.com/Saima-Devops/infra-epicbook.git
 
 ## Application Repository URL
 
-[Paste your Application Repository URL here.]
+https://github.com/Saima-Devops/theepicbook.git
 
 ---
 
@@ -188,7 +204,29 @@ Add your screenshot here.
 
 Write a short explanation of why separate Infrastructure and Application Repositories were used.
 
-[Write your explanation here.]
+```
+                    AZURE DEVOPS
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+        Terraform Pipeline     Ansible/App Pipeline
+              │                     │
+              ▼                     ▼
+        Azure Infrastructure    Application Deployment
+              │                     │
+              ▼                     ▼
+        VMs / Network / DB      Ansible
+                                      │
+                         ┌────────────┼────────────┐
+                         ▼            ▼            ▼
+                       Backend     Database      Frontend
+```
+
+I split the project into two repositories because infrastructure and application code change for different reasons, at different speeds, and are usually owned by different teams. 
+
+The Infrastructure Repository (infra-epicbook) holds only Terraform and its pipeline. Only that pipeline is authorized to use the Azure Resource Manager service connection, so an application change can never create or delete cloud resources. 
+
+The Application Repository (theepicbook) holds EpicBook, the Ansible code and its pipeline. Only that pipeline can use the SSH key in Secure Files. Each repository has its own history, triggers and permissions, which keeps changes smaller, reviews clearer, and access limited to what each pipeline actually needs.
 
 ---
 
@@ -201,8 +239,15 @@ Write a short explanation of how the following non-sensitive Terraform outputs w
 * `backend_private_ip`
 * `mysql_fqdn`
 
-[Write your explanation here.]
+After the Terraform infrastructure was successfully applied, the required non-sensitive outputs were obtained using `terraform output`. The values were manually transferred to the Application Repository and added to `ansible/inventory.ini` and the Ansible group variables.
 
+The handoff was:
+- `app_public_ip` → used as the `ansible_host` for `frontend-vm`.
+- `backend_ansible_host` → used as the `ansible_host` for `backend-vm`.
+- `backend_private_ip` → added to the backend inventory so the frontend Nginx configuration could proxy to the backend over its private IP.
+- `mysql_fqdn` → added to the backend variables as the MySQL database host.
+
+Only non-sensitive infrastructure addressing information was transferred. The MySQL password and SSH private key were not stored in the repository; they were supplied securely through Azure DevOps secrets and Secure Files.
 ---
 
 # LinkedIn Requirement
@@ -216,11 +261,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![alt text](screenshots/Assign-4/Screenshot-17.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://www.linkedin.com/posts/saima-usman_azuredevops-devops-azure-share-7507144574600085504-bsmr
 
 Your post must include:
 

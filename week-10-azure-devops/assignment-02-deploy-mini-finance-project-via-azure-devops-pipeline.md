@@ -89,7 +89,6 @@ Confirm the pipeline run succeeded (checkout, SSH connection, file transfer, rem
 
 ![alt text](screenshots/Assign-2/Screenshot-6b.png)
 
-
 ---
 
 #### Screenshot 7 — Browser showing the deployed website with the VM public IP visible

@@ -4,7 +4,7 @@
 ![Program](https://img.shields.io/badge/DevOps_Micro_Internship-SAIMA_USMAN-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-![Weeks](https://img.shields.io/badge/Weeks_Completed-12%2F15-green?style=for-the-badge)
+![Weeks](https://img.shields.io/badge/Weeks_Completed-13%2F15-green?style=for-the-badge)
 
 
 > 👋 **New here?** Read the [submission instructions](./onboarding) first — how to fork, fill in, and submit your assignments.

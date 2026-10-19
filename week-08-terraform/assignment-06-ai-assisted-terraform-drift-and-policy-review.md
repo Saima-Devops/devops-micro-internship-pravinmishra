@@ -79,12 +79,11 @@ Add a screenshot of the folder structure showing `AI Assignment/`, `reports/`, a
 
 ### 1. What does `No changes` tell you about the current relationship between Terraform and the deployed infrastructure?
 
-Write your answer here.
+It means that Terraform's current configuration matches the infrastructure that is already deployed in AWS. Terraform compared the desired configuration with the actual infrastructure and found no differences that require changes.
 
 ### 2. Why is a clean baseline important before introducing a test change?
 
-Write your answer here.
-
+A clean baseline gives us a known-good starting point. If we introduce a test change after confirming that there are no existing differences, we can be confident that any change detected by Terraform is related to our deliberate test rather than an older unresolved issue. This makes the drift-review results easier to understand and verify.
 ---
 
 # Task 2 — Create Project Context and Safety Rules in `CLAUDE.md`
