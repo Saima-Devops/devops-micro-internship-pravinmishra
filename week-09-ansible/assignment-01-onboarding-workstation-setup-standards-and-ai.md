@@ -21,6 +21,7 @@ Create and activate an isolated `.venv` inside `ansible-onboarding/`, install `a
 #### Screenshot 1 — Terminal showing the activated `.venv` and successful `ansible --version` output
 
 ![alt text](screenshots/w-09-assnmnt-01-Sc-01.png)
+
 ---
 
 #### Screenshot 2 — Terminal showing successful `ansible-lint --version` output and `requirements.txt`
