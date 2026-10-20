@@ -20,7 +20,17 @@ Create resource group `rg-aks-lb-lab` and a one-node AKS cluster `aks-lb-lab` (`
 
 #### Screenshot 1 — AKS creation result and Ready node output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-9/Screenshot-1.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-2.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-3.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-4.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-5.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-6.png)
 
 ---
 
@@ -34,7 +44,9 @@ Create two healthy, probed NGINX Pods for the public Service.
 
 #### Screenshot 2 — Successful rollout and two Ready Pods
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-9/Screenshot-7.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-8.png)
 
 ---
 
@@ -48,7 +60,10 @@ Create `nginx-svc-lb` (type `LoadBalancer`, port 80), wait for `EXTERNAL-IP`, an
 
 #### Screenshot 3 — Service with public `EXTERNAL-IP` and successful `curl` output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-9/Screenshot-8a.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-9.png)
+
 
 ---
 
@@ -62,7 +77,11 @@ Apply a broken readiness patch, confirm the Pod leaves the endpoint set and publ
 
 #### Screenshot 4 — Endpoint changes and public `curl` behavior before and after recovery
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-9/Screenshot-10.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-11.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-12.png)
 
 ---
 
@@ -76,7 +95,9 @@ Scale to four replicas and confirm the endpoint set grows while the public IP st
 
 #### Screenshot 5 — Four replicas/endpoints behind the unchanged public endpoint
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-9/Screenshot-13.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-14.png)
 
 ---
 
@@ -90,7 +111,9 @@ Resolve any pending endpoint or unhealthy backend issues, then delete the Kubern
 
 #### Screenshot 6 — Clean final verification or resource deletion command output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-9/Screenshot-15.png)
+
+![alt text](screenshots/Assignment-9/Screenshot-16.png)
 
 ---
 
@@ -98,7 +121,7 @@ Add your screenshot here.
 
 Write a short note describing what the lab demonstrated.
 
-Write your answer here.
+This lab demonstrated that readiness probes control which nginx Pods receive public traffic. Breaking readiness removed both Pods from the usable endpoint set and caused requests to fail; restoring readiness recovered HTTP 200. Scaling to four replicas increased the ready endpoints without changing the public hostname. The lab used AWS EKS, and resources were retained for review.
 
 ---
 
