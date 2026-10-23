@@ -20,13 +20,15 @@ Select a Kubernetes platform, confirm `kubectl` (and Helm, if used) can communic
 
 #### Screenshot 1 — Terminal showing the active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-1.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-1a.png)
 
 ---
 
 #### Screenshot 2 (if using Helm) — Terminal showing `helm version`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-2.png)
 
 ---
 
@@ -40,7 +42,7 @@ Create an architecture diagram showing the public entry point, frontend, interna
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/architecture-diagram-ss3.png)
 
 ---
 
@@ -54,13 +56,13 @@ Externalize non-sensitive configuration into ConfigMaps and sensitive values (da
 
 #### Screenshot 4 — ConfigMap manifest or `kubectl describe configmap` output showing non-sensitive configuration
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-4.png)
 
 ---
 
 #### Screenshot 5 — Secret object usage with sensitive values hidden or redacted
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-5.png)
 
 ---
 
@@ -74,13 +76,13 @@ Provide a persistent MySQL database (managed service or StatefulSet + PVC) reach
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet/PVC status
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-6.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-7.png)
 
 ---
 
@@ -94,13 +96,13 @@ Run one or two Node.js/Express backend replicas on port 3010, expose them via Cl
 
 #### Screenshot 8 — Backend Deployment, Pods, and internal Service
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-8.png)
 
 ---
 
 #### Screenshot 9 — Backend logs showing successful startup and database connectivity
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-9.png)
 
 ---
 
@@ -114,13 +116,13 @@ Run one or two Next.js frontend replicas behind Nginx on port 80, reverse-proxyi
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-10.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-11.png)
 
 ---
 
@@ -134,13 +136,13 @@ Expose only the frontend publicly (LoadBalancer or Ingress), restrict backend ac
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress showing the public endpoint
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-12.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy (or equivalent restriction)
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-13.png)
 
 ---
 
@@ -154,31 +156,48 @@ Confirm the frontend loads publicly, a full user flow reaches the backend and My
 
 #### Screenshot 14 — `kubectl get all` output
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-14.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the public URL or IP visible
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/book-review-1.png)
+![alt text](screenshots/Assignment-10/book-review-2.png)
+![alt text](screenshots/Assignment-10/book-review-3.png)
+![alt text](screenshots/Assignment-10/book-review-4.png)
+![alt text](screenshots/Assignment-10/book-review-5.png)
+![alt text](screenshots/Assignment-10/book-review-6.png)
 
 ---
 
 #### Screenshot 16 — Frontend Pod logs
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-16.png)
 
 ---
 
 #### Screenshot 17 — Backend Pod logs showing successful requests or database activity
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-17.png)
 
 ---
 
 #### Screenshot 18 (optional) — Kubernetes dashboard
 
-Add your screenshot here.
+**Headlamp Kubernetes dashboard**
+
+![alt text](screenshots/Assignment-10/Screenshot-18a.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-18b.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-18c.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-18d.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-18e.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-19.png)
 
 ---
 
@@ -192,7 +211,9 @@ Optionally package as a Helm chart, add HPA, add readiness/liveness probes, or c
 
 #### Screenshot 19 (optional) — Helm release, HPA, probes, or TLS evidence
 
-Add your screenshot here.
+![alt text](screenshots/Assignment-10/Screenshot-19a.png)
+
+![alt text](screenshots/Assignment-10/Screenshot-19b.png)
 
 ---
 
@@ -200,7 +221,21 @@ Add your screenshot here.
 
 Report the Kubernetes platform used, the public frontend URL/IP, a GitHub link to your manifests/Helm chart (if applicable), and the architecture diagram link. Summarize what worked, issues encountered and how they were resolved, and the tools/sources that helped the most.
 
-Write your answer here.
+- **Platform:** Local k3s v1.35.5+k3s1, created with k3d v5.9.0 on Docker Desktop for Intel macOS.
+<br>
+- **Frontend endpoint:** http://localhost:8081. This is accessible locally on my Mac; it is not internet-public.
+<br>
+- **Architecture:** Traefik Ingress routes traffic to the frontend Service on port 80. Nginx forwards pages to Next.js and API requests to the internal Express backend on port 3010. The backend connects to MySQL, deployed as a StatefulSet with a persistent volume.
+<br>
+- **Configuration and security:** ConfigMaps store application settings and Nginx configuration. A Kubernetes Secret stores database passwords and the JWT signing key. NetworkPolicies restrict incoming traffic to the intended application paths.
+<br>
+- **Validation:** Registration, login, book creation, and reviews worked. Saved data remained after MySQL Pod recreation. Frontend-to-backend and backend-to-MySQL connections succeeded; connections from an unrelated Pod were refused.
+<br>
+- **Issues resolved:** Jenkins occupied port 8080, so I used port 8081. Invalid saved Docker Hub credentials prevented image downloads; clearing the login resolved the issue. The isolation tests were adjusted to recognize refused connections as well as timeouts.
+<br>
+- **Enhancements:** Startup, readiness, and liveness probes; resource requests and limits; non-root frontend and backend containers.
+<br>
+- **Tools:** Docker Desktop, k3d, k3s, kubectl, Node.js, Next.js, Nginx, and MySQL.
 
 ---
 
