@@ -76,10 +76,7 @@ https://dmi.pravinmishra.com/s/Saima-Devops.html
 **Your stack (uncomment each badge as you earn it):**
 
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)Week 00 → Internet & Networking Basics[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)Week 01 → Success Mindset [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) Week 02 → Agentic AI with Claude Code  [![Week 03 – Linux](./badges/week-03.svg)](./week-03-linux-for-devops/) Week 03 → Linux for DevOps  [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) Week 04 → Git & GitHub [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) Week 05 → DevOps Lifecycle & Agile <br> [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) Week 06 → AWS Cloud  [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)  Week 07 → Azure Cloud <br> [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) Week 08 → Terraform [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) Week 09 → Ansible [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) Week 10 → Azure DevOps CI/CD  [![Week 11 – Docker](./badges/week-11.svg)](./week-11-docker/) 
-Week 11 → Docker 
-
-<!-- Week 12 → Kubernetes -->
-<!-- [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) -->
+Week 11 → Docker <br> [![Week 12 – K8s](./badges/week-12.svg)](./week-12-kubernetes/) Week 12 → Kubernetes 
 
 <!-- Week 13 → Final Project / Capstone -->
 <!-- [![Week 13 – Capstone](./badges/week-13.svg)](./week-13-final-project/) -->
@@ -119,12 +116,12 @@ Week 11 → Docker
 | 10 | Ansible | ✅ Started  | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-devops-terraform-ugcPost-7503559857472684032-_K9K | https://medium.com/@saimausman.dxb/from-hours-of-manual-configuration-to-minutes-of-automation-374090075d17 |
 | 11 | Azure DevOps (CI/CD) | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_azuredevops-devops-azure-share-7507144574600085504-bsmr/| https://medium.com/@saimausman.dxb/ai-meets-devops-building-a-safe-azure-devops-pipeline-failure-triage-workflow-03f308b66c85?sharedUserId=saimausman.dxb|
 | 12 | Docker | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_dmibypravinmishra-devops-aws-share-7512118663664168961-ZNYo | https://medium.com/@saimausman.dxb/my-docker-journey-from-it-works-to-i-trust-it-a4f86921f191 |
-| 13 | Kubernetes | ✅ Started | ⏳ Pending | — | — |
+| 13 | Kubernetes | ✅ Started | ✅ Completed | https://www.linkedin.com/posts/saima-usman_kubernetes-devops-docker-share-7519486818355085312-6-Uq | https://www.linkedin.com/pulse/system-design-fundamentals-building-applications-stay-saima-usman-wrzme |
 | 14 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
 
 
 **Status:** ✅ Completed Week-00 till Week-12<br>
-**Assignment:** ✅ Solved (till week-11)
+**Assignment:** ✅ Solved (till week-12)
 
 ---
 
